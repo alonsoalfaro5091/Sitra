@@ -105,3 +105,7 @@ Ingest de esa restructuración a la wiki: creada [[Desarrollo de Zitrazo]], enla
 Revisadas las 19 páginas de contenido (excluye index/log). Sin páginas huérfanas nuevas: [[Uso de IA en el Proyecto]] y [[Desarrollo de Zitrazo]] tienen enlace entrante desde el índice y desde [[Zitrazo]]. Sin contradicciones detectadas.
 
 Pendientes ya identificados en ingests anteriores, todavía abiertos (no son bugs de la wiki, son huecos de contenido real del proyecto Zitrazo): páginas [[Especificación de Requerimientos Funcionales]] y [[Modelo Relacional Normalizado]] enlazadas desde [[Proyecto Final de Desarrollo de Software]] pero aún sin crear; Kick Off y Acta de Constitución de Zitrazo sin iniciar (falta fecha de reunión y roles del equipo); columna "Actores" de la planilla de requerimientos en genérico, pendiente de afinar cuando se definan entidades.
+
+## [2026-08-10] proyecto | Zitrazo — solo documentar tecnologías, no implementar todavía
+
+El usuario aclaró: por ahora solo quiere dejar documentado qué se va a usar (Raspberry Pi, lenguajes, etc.), no empezar a programar. Creado `Codigo/dev/tecnologias.md` con tabla de software (Java, JavaFX, PostgreSQL/PL-pgSQL, git) y hardware (Raspberry Pi 4, tarjeta SofoCard) ya decididos, y lo que falta definir marcado explícitamente como pendiente: tipo/modelo del lector de tarjetas, tipo de pantalla, sistema operativo de la Pi, y su RAM/almacenamiento — no se inventó ninguno de estos datos. `metodologia.md` ahora enlaza a este archivo en vez de duplicar la lista. Reflejado en [[Desarrollo de Zitrazo]].

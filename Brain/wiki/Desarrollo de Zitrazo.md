@@ -33,6 +33,10 @@ Detalle completo en `Codigo/dev/metodologia.md` y `Codigo/dev/backlog.md` (fuera
 
 Los 10 requerimientos de la [[Planilla de Requerimientos|planilla de requerimientos]] de Zitrazo (R.1-R.10) quedaron convertidos en tareas de desarrollo, agrupados por ola. Todos en estado Pendiente — ninguno implementado todavía.
 
-## Pila técnica
+## Tecnologías
 
-Java + JavaFX (ver justificación en [[Zitrazo]]), PostgreSQL + PL/pgSQL, Raspberry Pi 4 como servidor de pruebas, git/GitHub para control de versiones.
+Decidido: Java + JavaFX (ver justificación en [[Zitrazo]]), PostgreSQL + PL/pgSQL, Raspberry Pi 4 como servidor de pruebas, tarjeta SofoCard para identificación, git/GitHub para control de versiones.
+
+Pendiente de definir: tipo y modelo del lector de tarjetas, tipo de pantalla de confirmación, sistema operativo de la Raspberry Pi, y su RAM/almacenamiento exactos.
+
+Detalle completo en `Codigo/dev/tecnologias.md` (fuera de la wiki, junto al código) — se va actualizando a medida que se toman las decisiones pendientes.

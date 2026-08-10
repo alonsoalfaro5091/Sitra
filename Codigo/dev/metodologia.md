@@ -16,11 +16,7 @@ El detalle de tareas de cada ola está en [`backlog.md`](backlog.md).
 
 ## Tecnologías
 
-- **Lenguaje:** Java.
-- **Interfaz:** JavaFX (reemplazo de JFrame — ver justificación en la wiki, página [[Zitrazo]]).
-- **Base de datos:** PostgreSQL + PL/pgSQL para los procedimientos almacenados.
-- **Servidor de pruebas:** Raspberry Pi 4.
-- **Control de versiones:** git (repo `Zitrazo`, en GitHub).
+Ver [`tecnologias.md`](tecnologias.md) — lo ya decidido (Java, JavaFX, PostgreSQL/PL-pgSQL, Raspberry Pi 4, tarjeta SofoCard) y lo que todavía falta definir (lector de tarjetas, pantalla, sistema operativo de la Pi).
 
 ## Antes de escribir código
 
