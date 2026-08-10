@@ -48,7 +48,7 @@ Primera página en la categoría "Proyectos" del índice (antes vacía).
 
 ## [2026-08-10] proyecto | SofoCard — inicio del Análisis del Caso
 
-Nuevo proyecto real en desarrollo (no un ingest de fuente externa, sino trabajo en vivo con el usuario). Creada [[SofoCard]], primera sección (Análisis del Caso) a partir de la conversación y de `raw/Ideas/Lluvia de ideas Yuyito.md`.
+Nuevo proyecto real en desarrollo (no un ingest de fuente externa, sino trabajo en vivo con el usuario). Creada [[Zitrazo|SofoCard]], primera sección (Análisis del Caso) a partir de la conversación y de `raw/Ideas/Lluvia de ideas Yuyito.md`.
 
 Decisiones registradas: se descarta huella dactilar por ser dato biométrico sensible de menores de edad (Ley 19.628 / 21.719), se opta por sistema de tarjetas ("SofoCard"); alcance acotado por fases según el [[Triángulo de Gestión]] (atrasos primero, JUNAEB/asistencia por clase quedan como fases futuras); JavaFX recomendado como reemplazo de JFrame (mantiene el requisito de usar Java, corre bien en el servidor de pruebas Raspberry Pi 4 que están considerando). Entidades del sistema quedan pendientes, aún sin profundizar.
 
@@ -62,7 +62,7 @@ A pedido del usuario, [[ArcaBlend (Proyecto Ejemplo)]] queda congelado como esta
 
 ## [2026-08-10] proyecto | SofoCard — Análisis del Caso completo
 
-Completada la sección 1 de [[SofoCard]] siguiendo la estructura oficial de 9 puntos de [[Proyecto Final de Desarrollo de Software]] (más detallada que la plantilla genérica). Datos aportados por el usuario: situación actual (registro a mano en cuaderno por los inspectores, traspasado luego a Kimche —descrita como mala y desorganizada—, con casos de alumnos que dan nombres falsos al no haber verificación de identidad) y quiénes hacen el ingreso hoy (inspectores o profesores presentes en la entrada).
+Completada la sección 1 de [[Zitrazo|SofoCard]] siguiendo la estructura oficial de 9 puntos de [[Proyecto Final de Desarrollo de Software]] (más detallada que la plantilla genérica). Datos aportados por el usuario: situación actual (registro a mano en cuaderno por los inspectores, traspasado luego a Kimche —descrita como mala y desorganizada—, con casos de alumnos que dan nombres falsos al no haber verificación de identidad) y quiénes hacen el ingreso hoy (inspectores o profesores presentes en la entrada).
 
 Con esto, la problemática y la necesidad detectada quedan ancladas en un hecho concreto: no es solo "no hay sistema", es "doble registro manual + sin verificación de identidad" — lo cual justifica más fuerte la decisión ya tomada de usar tarjeta (SofoCard) en vez de depender de la palabra del alumno.
 
@@ -70,14 +70,22 @@ Con esto, la problemática y la necesidad detectada quedan ancladas en un hecho 
 
 Completado el documento real `Documentacion/1 PLANTILLA Análisis del caso.docx` (fuera de `Brain/`, en `/home/shiroi/Proyectos/Zitrazo/Documentacion/`) editando directamente el XML interno del .docx a partir de la plantilla en blanco de `raw/Documentacion/` (nunca tocada), para conservar el formato y estilo exactos de la plantilla oficial. El archivo estaba abierto en OnlyOffice; se esperó a que el usuario lo cerrara antes de editar, por riesgo de corrupción/pérdida de cambios.
 
-A pedido del usuario, se bajó el nivel de lenguaje a uno simple de 4° medio (sin tecnicismos de gestión de proyectos) — se regeneró el documento completo desde la plantilla limpia en vez de editar el texto ya insertado, para evitar duplicar IDs de párrafo en la sección de objetivos específicos (que tiene varios ítems). Esta convención de lenguaje simple queda registrada en [[SofoCard]] para aplicarse a todos los documentos siguientes del proyecto (Kick Off, Acta de Constitución, etc.), tanto en el .docx real como en la wiki.
+A pedido del usuario, se bajó el nivel de lenguaje a uno simple de 4° medio (sin tecnicismos de gestión de proyectos) — se regeneró el documento completo desde la plantilla limpia en vez de editar el texto ya insertado, para evitar duplicar IDs de párrafo en la sección de objetivos específicos (que tiene varios ítems). Esta convención de lenguaje simple queda registrada en [[Zitrazo|SofoCard]] para aplicarse a todos los documentos siguientes del proyecto (Kick Off, Acta de Constitución, etc.), tanto en el .docx real como en la wiki.
 
 ## [2026-08-10] proyecto | SofoCard — Análisis del Caso aprobado, equipo confirmado
 
-El usuario aprobó el documento 1 (Análisis del Caso) en su versión simplificada. Se confirma que el equipo Pixelazo Corp lo forman 2 personas: Alonso (el usuario) y Esteban. Dato registrado en [[SofoCard]] para usarse en el Kick Off (integrantes, roles, responsabilidades).
+El usuario aprobó el documento 1 (Análisis del Caso) en su versión simplificada. Se confirma que el equipo Pixelazo Corp lo forman 2 personas: Alonso (el usuario) y Esteban. Dato registrado en [[Zitrazo|SofoCard]] para usarse en el Kick Off (integrantes, roles, responsabilidades).
 
 ## [2026-08-10] proyecto | SofoCard — Planilla de Requerimientos (adelantada)
 
 A pedido del usuario, se adelantó la Planilla de Requerimientos antes del Kick Off y la Acta de Constitución, usando actores genéricos ("Inspector o Profesor") hasta definir entidades en firme. No existía una plantilla en blanco para este documento (a diferencia de los otros 3) — se generó `Documentacion/4-EJEMPLO-Planilla de Requerimientos.xlsx` reescribiendo directamente `xl/worksheets/sheet2.xml` con celdas de texto inline (sin tocar sharedStrings.xml, más simple y sin riesgo de romper la tabla de strings compartida), a partir de la copia limpia en `Brain/raw/Documentacion/`.
 
 10 requerimientos (R.1-R.10: 7 funcionales, 3 no funcionales), todos en estado "Solicitado". R.9 formaliza como requerimiento no funcional la decisión ya tomada de no usar datos biométricos. Queda pendiente revisar la columna de actores una vez definidas las entidades del sistema.
+
+## [2026-08-10] proyecto | Corrección de nombre: el proyecto es Zitrazo, no SofoCard
+
+El usuario corrigió: el proyecto completo se llama **Zitrazo** (nombre que además coincide con el directorio raíz `/home/shiroi/Proyectos/Zitrazo/`). **SofoCard** es solo el nombre de la tarjeta de identificación, un componente del sistema — no el proyecto entero. Fue un error de esta wiki asumirlo como nombre de proyecto.
+
+Renombrada `wiki/SofoCard.md` → `wiki/Zitrazo.md` (mismo contenido, título y menciones ajustadas). Actualizadas las referencias en `index.md` y en `Proyecto Final de Desarrollo de Software.md`. Los enlaces `[[SofoCard]]` de entradas anteriores de este log se dejaron como `[[Zitrazo|SofoCard]]` (mismo texto visible, apuntando a la página correcta) en vez de reescribir el historial.
+
+A pedido del usuario, también se renombraron los 4 documentos reales en `Documentacion/` (que decían "SofoCard" en el nombre de archivo) a "Zitrazo".

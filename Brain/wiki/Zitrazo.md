@@ -3,9 +3,11 @@ tags: [proyecto, en-desarrollo, gestion-de-proyectos, ingenieria-de-requerimient
 source: "[[Lluvia de ideas Yuyito.md]]"
 ---
 
-# SofoCard
+# Zitrazo
 
 Proyecto real (2026) en desarrollo por la miniempresa **Pixelazo Corp**, a diferencia de [[ArcaBlend (Proyecto Ejemplo)]] que es un caso cerrado usado solo como ejemplo — esta página se va a ir completando en vivo, documento por documento, a medida que avanza el proyecto real.
+
+**SofoCard** es el nombre de la tarjeta de identificación que usa el sistema (ver decisión más abajo) — no es el nombre del proyecto, es solo uno de sus componentes.
 
 **Cliente (ficticio):** Corporación Sofofa, dueña del Liceo Bicentenario de Electrotecnia Ramón Barros Luco (RBL).
 
@@ -13,7 +15,7 @@ Proyecto real (2026) en desarrollo por la miniempresa **Pixelazo Corp**, a difer
 
 ## 1. Análisis del Caso
 
-Texto igual al del documento real (`Documentacion/1 PLANTILLA Análisis del caso.docx`), en lenguaje simple de 4° medio — sin tecnicismos innecesarios:
+Texto igual al del documento real (`Documentacion/1 Zitrazo Análisis del Caso.docx`), en lenguaje simple de 4° medio — sin tecnicismos innecesarios:
 
 - **Contexto:** Sofofa, la empresa dueña del Liceo Bicentenario de Electrotecnia Ramón Barros Luco (RBL), le pidió a Pixelazo Corp un sistema que permita registrar los atrasos de los estudiantes de forma eficaz, ágil y segura, tanto para los alumnos como para los profesores. Hoy en día, los inspectores anotan cada atraso a mano en un cuaderno (nombre, curso y hora) y después lo pasan a Kimche, que es la aplicación que usa el liceo para todo lo demás, pero que es desordenada y poco práctica. El registro lo hace el inspector o el profesor que esté en la entrada en ese momento.
 - **Problema:** hoy el registro se hace dos veces (cuaderno y después Kimche), lo que toma tiempo y puede generar errores al escribir. Además, como nadie verifica quién es realmente el alumno, algunos estudiantes dan un nombre que no es el suyo. Esto afecta a los inspectores y profesores, que pierden tiempo con el doble registro, y a los alumnos, a los que a veces les anotan atrasos que no son de ellos.
@@ -60,7 +62,7 @@ Adelantada antes del Kick Off y la Acta de Constitución, a pedido del usuario �
 | R.9 | Protección de datos del alumno | No Funcional | — | Solicitado |
 | R.10 | Disponibilidad en el horario de entrada | No Funcional | — | Solicitado |
 
-Ver descripciones completas en el documento real `Documentacion/4-EJEMPLO-Planilla de Requerimientos.xlsx`. R.9 formaliza como requerimiento la decisión ya tomada de no usar huella dactilar.
+Ver descripciones completas en el documento real `Documentacion/4 Zitrazo Planilla de Requerimientos.xlsx`. R.9 formaliza como requerimiento la decisión ya tomada de no usar huella dactilar.
 
 ### Pendiente de esta sección
 

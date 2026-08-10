@@ -40,6 +40,6 @@ Objetivo: implementar la solución de la Etapa 1, generar documentación técnic
 
 Problemática → Análisis del Caso → Solución tecnológica → Kick Off → Acta de Constitución → Requerimientos (RF/RNF) → Casos de Uso → Especificación de Requerimientos → Modelo Relacional (3FN) → **Presentación Etapa 1** → Desarrollo de BD → Procedimientos Almacenados → Desarrollo Java/Web → Integración → Pruebas → ERS → Manual de Usuario → **Aplicación terminada** → Presentación y Defensa Final.
 
-## Notas para [[SofoCard]]
+## Notas para [[Zitrazo]]
 
-El proyecto real en desarrollo debe seguir esta estructura completa. Al momento de este ingest, [[SofoCard]] tiene resuelto el punto 1 (Análisis del Caso) y decisiones preliminares de alcance y tecnología; faltan los puntos 2 en adelante.
+El proyecto real en desarrollo debe seguir esta estructura completa. Al momento de este ingest, [[Zitrazo]] tiene resuelto el punto 1 (Análisis del Caso) y decisiones preliminares de alcance y tecnología; faltan los puntos 2 en adelante.
