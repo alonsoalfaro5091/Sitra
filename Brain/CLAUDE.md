@@ -6,13 +6,18 @@ Wiki personal construida y mantenida por Claude a partir de material sobre anál
 
 - `raw/` — fuentes originales (docx, xlsx, pptx). Nunca se editan, solo se leen.
 - `wiki/` — páginas markdown generadas y mantenidas por Claude. Aquí vive todo el conocimiento sintetizado.
+- `index.md` y `log.md` — viven en la raíz de `Brain/`, fuera de `wiki/`, para tenerlos a mano fácilmente (no hay que entrar a la carpeta de páginas para consultarlos).
+- `*.canvas` — canvases de Obsidian en la raíz de `Brain/`, para diagramas visuales (ej. `Modelo Relacional Zitrazo.canvas` para el modelo de datos del proyecto real).
 - Este archivo — el esquema. Se actualiza junto con el usuario a medida que el flujo de trabajo se afina.
+
+## `index.md` y `log.md`
+
+- `index.md` — catálogo de todas las páginas de la wiki, organizado por categoría, cada una con link + resumen de una línea. Se actualiza en cada ingest.
+- `log.md` — registro cronológico append-only. Cada entrada empieza con `## [YYYY-MM-DD] tipo | Título` (tipo: ingest, query, lint, proyecto).
 
 ## Estructura de `wiki/`
 
-- `index.md` — catálogo de todas las páginas de la wiki, organizado por categoría, cada una con link + resumen de una línea. Se actualiza en cada ingest.
-- `log.md` — registro cronológico append-only. Cada entrada empieza con `## [YYYY-MM-DD] tipo | Título` (tipo: ingest, query, lint).
-- Páginas de contenido, sin subcarpetas fijas por ahora — se crean a medida que aparecen categorías reales (ej. `Conceptos/`, `Plantillas/`, `Proyectos/`). No crear carpetas vacías de antemano.
+- Solo páginas de contenido, sin subcarpetas fijas por ahora — se crean a medida que aparecen categorías reales (ej. `Conceptos/`, `Plantillas/`, `Proyectos/`). No crear carpetas vacías de antemano.
 
 ## Convenciones de página
 

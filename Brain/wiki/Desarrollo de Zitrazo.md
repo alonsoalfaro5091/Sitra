@@ -48,3 +48,7 @@ Decidido: Java, JavaFX (app de administración), PostgreSQL + PL/pgSQL, Raspberr
 Pendiente: modelo exacto del lector RFID, tipo de mini pantalla (OLED vs. TFT).
 
 Detalle completo en `Codigo/dev/tecnologias.md` (fuera de la wiki, junto al código) — se va actualizando a medida que se toman las decisiones pendientes.
+
+## Sistema físico
+
+`Codigo/sistema-fisico/README.md` documenta el punto de entrada componente por componente (ESP32, RC522, pantalla, alimentación, carcasa) con sus consideraciones eléctricas — por ejemplo, que el RC522 funciona a 3.3V (no 5V), o que una pantalla OLED por I2C simplifica el cableado frente a una TFT por SPI al compartir bus con el lector. Quedan pendientes: tipo de pantalla final, cobertura WiFi en el punto de instalación, y el diseño de la carcasa.

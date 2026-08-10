@@ -115,3 +115,17 @@ El usuario aclaró: por ahora solo quiere dejar documentado qué se va a usar (R
 El usuario confirmó: Raspberry Pi con Debian Server (terminal pura, sin entorno gráfico), 4GB RAM, 32GB de almacenamiento; para el lector de tarjetas quieren algo barato y accesible, tienen impresora 3D disponible, y preguntaron si un ESP32 con mini pantalla podría servir.
 
 Se recomendó ESP32 + módulo RFID RC522 (barato, muy documentado) + mini pantalla (OLED o TFT). Se detectó y flagueó una inconsistencia con la arquitectura previa: Debian Server sin GUI no puede correr JavaFX en la propia Pi. El usuario confirmó la arquitectura corregida: Pi = backend headless (PostgreSQL + Java), ESP32+RC522+pantalla = punto de entrada físico, JavaFX = app de administración en el PC de un inspector (no en la Pi). Documentado en `Codigo/dev/tecnologias.md` y reflejado en [[Desarrollo de Zitrazo]] (nueva sección "Arquitectura").
+
+## [2026-08-10] proyecto | Zitrazo — sistema físico y componentes electrónicos
+
+El usuario notó que `Codigo/sistema-fisico/` seguía con el placeholder vacío pese a haber hardware ya decidido. Completado con lista de componentes (ESP32, RC522, mini pantalla, tarjetas RFID, fuente 5V, carcasa 3D) y consideraciones eléctricas de cada uno: el RC522 es de 3.3V y no tolera 5V, el rango de lectura corto es una ventaja (evita lecturas accidentales), y elegir OLED (I2C) en vez de TFT (SPI) simplifica el cableado al no compartir bus con el RC522. Reflejado en [[Desarrollo de Zitrazo]] (nueva sección "Sistema físico").
+
+## [2026-08-10] lint | index.md y log.md movidos fuera de wiki/ por error
+
+Se detectó que `wiki/index.md` y `wiki/log.md` habían quedado movidos a la raíz de `Brain/` (probablemente un arrastre accidental en Obsidian mientras se solucionaba el problema de la vista gráfica de la entrada anterior). Contenido idéntico al de la última versión commiteada — no se perdió nada, solo la ubicación. Restaurados a `wiki/` según la estructura definida en `CLAUDE.md`.
+
+## [2026-08-10] proyecto | Corrección: index.md y log.md sí van fuera de wiki/
+
+El usuario aclaró que el movimiento de la entrada anterior no fue un accidente: quiere `index.md` y `log.md` en la raíz de `Brain/` (fuera de `wiki/`) a propósito, para tenerlos más a mano. Revertida la restauración — vuelven a `Brain/index.md` y `Brain/log.md`. Actualizado `CLAUDE.md` para reflejar esta estructura como la definitiva.
+
+De paso, el usuario aclaró el propósito del archivo `Sin título.canvas` (vacío, en la raíz de `Brain/`): es para diagramar el Modelo Relacional Normalizado de [[Zitrazo]]. Renombrado a `Modelo Relacional Zitrazo.canvas`.

@@ -11,10 +11,14 @@
             "id": "8eb708b33770833c",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Vista gráfica"
+              "type": "markdown",
+              "state": {
+                "file": "wiki/Uso de IA en el Proyecto.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Uso de IA en el Proyecto"
             }
           }
         ]
@@ -95,6 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "raw/Ideas/Lluvia de ideas Yuyito.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,6 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "raw/Ideas/Lluvia de ideas Yuyito.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -155,6 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "raw/Ideas/Lluvia de ideas Yuyito.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -183,17 +190,31 @@
   },
   "active": "8eb708b33770833c",
   "lastOpenFiles": [
+    "log.md.tmp.19540.bf827800c408",
+    "CLAUDE.md.tmp.19540.ef53f23ff784",
+    "Modelo Relacional Zitrazo.canvas",
+    "log.md",
+    "index.md",
+    "wiki/log.md.tmp.19540.6ce29788244a",
+    "wiki/log.md",
+    "wiki/index.md",
+    "wiki/Desarrollo de Zitrazo.md.tmp.19540.2164886da939",
+    "wiki/Historia de Usuario.md",
+    "wiki/Desarrollo de Zitrazo.md",
+    "wiki/Ciclo de Vida del Proyecto de Software.md",
+    "wiki/Caso de Uso.md",
+    "wiki/ArcaBlend (Proyecto Ejemplo).md",
+    "wiki/Análisis del Caso.md",
+    "wiki/Acta de Reunión Kick Off.md",
+    "wiki/Acta de Constitución.md",
     "raw/Ideas/Lluvia de ideas Yuyito.md",
+    "CLAUDE.md",
+    "Sin título.canvas",
     "wiki/Metodologías de Desarrollo.md",
     "wiki/log.md.tmp.19540.1fe502df830a",
     "wiki/SofoCard.md.tmp.19540.5a6f76b3a714",
     "wiki/SofoCard.md.tmp.19540.220c136635e6",
     "wiki/log.md.tmp.19540.54ede3309881",
-    "wiki/SofoCard.md.tmp.19540.37418ebf2907",
-    "wiki/Ciclo de Vida del Proyecto de Software.md",
-    "wiki/Caso de Uso.md",
-    "wiki/ArcaBlend (Proyecto Ejemplo).md",
-    "wiki/Acta de Reunión Kick Off.md",
-    "wiki/Acta de Constitución.md"
+    "wiki/SofoCard.md.tmp.19540.37418ebf2907"
   ]
 }
