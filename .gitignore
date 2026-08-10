@@ -1,0 +1,5 @@
+# Lock files de OnlyOffice/LibreOffice mientras un documento está abierto
+.~lock.*#
+
+# Archivos temporales de Word/Office
+~$*
