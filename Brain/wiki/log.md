@@ -71,3 +71,13 @@ Con esto, la problemática y la necesidad detectada quedan ancladas en un hecho 
 Completado el documento real `Documentacion/1 PLANTILLA Análisis del caso.docx` (fuera de `Brain/`, en `/home/shiroi/Proyectos/Zitrazo/Documentacion/`) editando directamente el XML interno del .docx a partir de la plantilla en blanco de `raw/Documentacion/` (nunca tocada), para conservar el formato y estilo exactos de la plantilla oficial. El archivo estaba abierto en OnlyOffice; se esperó a que el usuario lo cerrara antes de editar, por riesgo de corrupción/pérdida de cambios.
 
 A pedido del usuario, se bajó el nivel de lenguaje a uno simple de 4° medio (sin tecnicismos de gestión de proyectos) — se regeneró el documento completo desde la plantilla limpia en vez de editar el texto ya insertado, para evitar duplicar IDs de párrafo en la sección de objetivos específicos (que tiene varios ítems). Esta convención de lenguaje simple queda registrada en [[SofoCard]] para aplicarse a todos los documentos siguientes del proyecto (Kick Off, Acta de Constitución, etc.), tanto en el .docx real como en la wiki.
+
+## [2026-08-10] proyecto | SofoCard — Análisis del Caso aprobado, equipo confirmado
+
+El usuario aprobó el documento 1 (Análisis del Caso) en su versión simplificada. Se confirma que el equipo Pixelazo Corp lo forman 2 personas: Alonso (el usuario) y Esteban. Dato registrado en [[SofoCard]] para usarse en el Kick Off (integrantes, roles, responsabilidades).
+
+## [2026-08-10] proyecto | SofoCard — Planilla de Requerimientos (adelantada)
+
+A pedido del usuario, se adelantó la Planilla de Requerimientos antes del Kick Off y la Acta de Constitución, usando actores genéricos ("Inspector o Profesor") hasta definir entidades en firme. No existía una plantilla en blanco para este documento (a diferencia de los otros 3) — se generó `Documentacion/4-EJEMPLO-Planilla de Requerimientos.xlsx` reescribiendo directamente `xl/worksheets/sheet2.xml` con celdas de texto inline (sin tocar sharedStrings.xml, más simple y sin riesgo de romper la tabla de strings compartida), a partir de la copia limpia en `Brain/raw/Documentacion/`.
+
+10 requerimientos (R.1-R.10: 7 funcionales, 3 no funcionales), todos en estado "Solicitado". R.9 formaliza como requerimiento no funcional la decisión ya tomada de no usar datos biométricos. Queda pendiente revisar la columna de actores una vez definidas las entidades del sistema.

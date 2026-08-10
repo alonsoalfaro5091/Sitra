@@ -9,6 +9,8 @@ Proyecto real (2026) en desarrollo por la miniempresa **Pixelazo Corp**, a difer
 
 **Cliente (ficticio):** Corporación Sofofa, dueña del Liceo Bicentenario de Electrotecnia Ramón Barros Luco (RBL).
 
+**Equipo (Pixelazo Corp):** Alonso y Esteban (2 integrantes).
+
 ## 1. Análisis del Caso
 
 Texto igual al del documento real (`Documentacion/1 PLANTILLA Análisis del caso.docx`), en lenguaje simple de 4° medio — sin tecnicismos innecesarios:
@@ -41,12 +43,35 @@ Por el [[Triángulo de Gestión]], el proyecto se acota a una sola fase por ahor
 
 Se evaluó el reemplazo de JFrame para la interfaz (pantalla junto al lector de tarjeta). Se optó por **JavaFX**: mantiene el requisito de usar Java, separa vista (FXML) de lógica, se estiliza con CSS, y corre bien en modo kiosco/pantalla completa sobre la Raspberry Pi 4 que ya consideran como servidor de pruebas. Alternativa de menor esfuerzo si JavaFX resulta pesado en la Pi: FlatLaf (Look & Feel moderno sobre Swing, sin cambiar de framework).
 
+## 4. Planilla de Requerimientos
+
+Adelantada antes del Kick Off y la Acta de Constitución, a pedido del usuario — actores en genérico ("Inspector o Profesor") hasta definir entidades en firme.
+
+| R-N° | Requerimiento | Tipo | Actores | Estado |
+|---|---|---|---|---|
+| R.1 | Registrar atraso con tarjeta SofoCard | Funcional | Inspector o Profesor | Solicitado |
+| R.2 | Confirmar el registro en pantalla | Funcional | Inspector, Profesor y Alumno | Solicitado |
+| R.3 | Detectar tarjeta no reconocida | Funcional | Inspector o Profesor | Solicitado |
+| R.4 | Consultar atrasos por alumno | Funcional | Inspector | Solicitado |
+| R.5 | Consultar listado de atrasos del día | Funcional | Inspector | Solicitado |
+| R.6 | Registrar alumno y su tarjeta SofoCard | Funcional | Administrador | Solicitado |
+| R.7 | Dar de baja una tarjeta extraviada | Funcional | Administrador | Solicitado |
+| R.8 | Registro rápido en la entrada | No Funcional | Inspector o Profesor | Solicitado |
+| R.9 | Protección de datos del alumno | No Funcional | — | Solicitado |
+| R.10 | Disponibilidad en el horario de entrada | No Funcional | — | Solicitado |
+
+Ver descripciones completas en el documento real `Documentacion/4-EJEMPLO-Planilla de Requerimientos.xlsx`. R.9 formaliza como requerimiento la decisión ya tomada de no usar huella dactilar.
+
+### Pendiente de esta sección
+
+Revisar "Actores" cuando se definan las entidades del sistema (Inspector vs. Profesor, rol del Apoderado) — probablemente cambie de genérico a específico.
+
 ## Convención de lenguaje
 
 Todos los documentos de este proyecto (real y en la wiki) se redactan en lenguaje simple de 4° medio: oraciones directas, sin tecnicismos de gestión de proyectos ni vocabulario rebuscado. Aplica también a los próximos documentos (Kick Off, Acta de Constitución, etc.).
 
 ## Próximos pasos
 
-- Definir entidades del sistema.
-- Kick off / [[Acta de Reunión Kick Off]].
+- Definir entidades del sistema (y afinar "Actores" de la planilla de requerimientos).
+- Kick off / [[Acta de Reunión Kick Off]] — falta fecha, y rol/responsabilidad de Alonso y Esteban.
 - [[Acta de Constitución]] con la pila técnica y fases definidas.
