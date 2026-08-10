@@ -93,3 +93,15 @@ A pedido del usuario, también se renombraron los 4 documentos reales en `Docume
 ## [2026-08-10] ingest | Uso de IA en el Proyecto
 
 Creada [[Uso de IA en el Proyecto]] a pedido del usuario, para dejar registro de cómo el equipo usó IA durante el desarrollo — pensada como respaldo para el criterio de rúbrica "Uso responsable de IA" (Etapa 2 de [[Proyecto Final de Desarrollo de Software]]) y para la defensa individual. Incluye qué tareas hizo la IA (redacción de borradores, llenado de documentos reales, una recomendación técnica puntual), qué decisiones siguieron siendo del equipo, y el error de nombre SofoCard/Zitrazo como ejemplo concreto de por qué hay que revisar lo que la IA entrega.
+
+## [2026-08-10] ingest | Restructuración de Codigo/ y creación de dev/
+
+A pedido del usuario, se reestructuró `Zitrazo/Codigo/` (antes 3 carpetas vacías sin contenido: `DB`, `Java`, `Sistema Fisico`) en `dev/`, `java/`, `db/`, `sistema-fisico/`. `dev/` es nueva: guarda `metodologia.md` (desarrollo en 3 "olas"/iteraciones, pila técnica, y una nota explícita de que el código no debe empezar antes del Modelo Relacional Normalizado) y `backlog.md` (los R.1-R.10 de la planilla de requerimientos convertidos en tareas, agrupadas por ola, todas Pendiente). `java/`, `db/` y `sistema-fisico/` quedaron con un README explicando qué van a contener y de qué dependen — deliberadamente vacíos todavía.
+
+Ingest de esa restructuración a la wiki: creada [[Desarrollo de Zitrazo]], enlazada desde [[Zitrazo]] (nueva sección "Desarrollo en código") y sumada al índice. Conecta el backlog con [[Planilla de Requerimientos]] y con la decisión de tarjeta vs. huella ya registrada.
+
+## [2026-08-10] lint | Revisión de salud de la wiki (segunda pasada)
+
+Revisadas las 19 páginas de contenido (excluye index/log). Sin páginas huérfanas nuevas: [[Uso de IA en el Proyecto]] y [[Desarrollo de Zitrazo]] tienen enlace entrante desde el índice y desde [[Zitrazo]]. Sin contradicciones detectadas.
+
+Pendientes ya identificados en ingests anteriores, todavía abiertos (no son bugs de la wiki, son huecos de contenido real del proyecto Zitrazo): páginas [[Especificación de Requerimientos Funcionales]] y [[Modelo Relacional Normalizado]] enlazadas desde [[Proyecto Final de Desarrollo de Software]] pero aún sin crear; Kick Off y Acta de Constitución de Zitrazo sin iniciar (falta fecha de reunión y roles del equipo); columna "Actores" de la planilla de requerimientos en genérico, pendiente de afinar cuando se definan entidades.

@@ -77,3 +77,7 @@ Todos los documentos de este proyecto (real y en la wiki) se redactan en lenguaj
 - Definir entidades del sistema (y afinar "Actores" de la planilla de requerimientos).
 - Kick off / [[Acta de Reunión Kick Off]] — falta fecha, y rol/responsabilidad de Alonso y Esteban.
 - [[Acta de Constitución]] con la pila técnica y fases definidas.
+
+## Desarrollo en código
+
+Ver [[Desarrollo de Zitrazo]] — carpeta `Codigo/` (fuera de la wiki), con la metodología de trabajo y el backlog de los R.1-R.10. El código no arranca hasta tener el Modelo Relacional Normalizado.
