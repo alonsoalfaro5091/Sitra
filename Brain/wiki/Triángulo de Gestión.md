@@ -2,7 +2,7 @@
 tags: [concepto, gestion-de-proyectos]
 source: "[[Que es un proyecto.pptx]]"
 ---
-
+334
 # Triángulo de Gestión
 
 Todo [[Proyecto de Software|proyecto]] equilibra tres restricciones, con la **calidad** en el centro como resultado de ese equilibrio:

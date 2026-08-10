@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/Uso de IA en el Proyecto.md",
+                "file": "wiki/Análisis del Caso.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Uso de IA en el Proyecto"
+              "title": "Análisis del Caso"
             }
           }
         ]
@@ -190,6 +190,23 @@
   },
   "active": "8eb708b33770833c",
   "lastOpenFiles": [
+    "wiki/Proyecto Final de Desarrollo de Software.md",
+    "wiki/Proyecto de Software.md",
+    "wiki/Planilla de Requerimientos.md",
+    "wiki/Metodologías de Desarrollo.md",
+    "wiki/Historia de Usuario.md",
+    "wiki/Desarrollo de Zitrazo.md",
+    "wiki/Ciclo de Vida del Proyecto de Software.md",
+    "wiki/Caso de Uso.md",
+    "wiki/Acta de Constitución.md",
+    "wiki/Análisis del Caso.md",
+    "wiki/Toma de Requerimientos.md",
+    "wiki/Triángulo de Gestión.md",
+    "wiki/Uso de IA en el Proyecto.md",
+    "log.md.tmp.19540.4fee0bc23c32",
+    "index.md.tmp.19540.f116222ec455",
+    "wiki/Resumen de Sesión — Kickoff de Zitrazo.md",
+    "wiki/Resumen de Sesión — Kickoff de Zitrazo.md.tmp.19540.8af93dd2e2ca",
     "log.md.tmp.19540.bf827800c408",
     "CLAUDE.md.tmp.19540.ef53f23ff784",
     "Modelo Relacional Zitrazo.canvas",
@@ -199,22 +216,13 @@
     "wiki/log.md",
     "wiki/index.md",
     "wiki/Desarrollo de Zitrazo.md.tmp.19540.2164886da939",
-    "wiki/Historia de Usuario.md",
-    "wiki/Desarrollo de Zitrazo.md",
-    "wiki/Ciclo de Vida del Proyecto de Software.md",
-    "wiki/Caso de Uso.md",
     "wiki/ArcaBlend (Proyecto Ejemplo).md",
-    "wiki/Análisis del Caso.md",
     "wiki/Acta de Reunión Kick Off.md",
-    "wiki/Acta de Constitución.md",
     "raw/Ideas/Lluvia de ideas Yuyito.md",
     "CLAUDE.md",
     "Sin título.canvas",
-    "wiki/Metodologías de Desarrollo.md",
     "wiki/log.md.tmp.19540.1fe502df830a",
     "wiki/SofoCard.md.tmp.19540.5a6f76b3a714",
-    "wiki/SofoCard.md.tmp.19540.220c136635e6",
-    "wiki/log.md.tmp.19540.54ede3309881",
-    "wiki/SofoCard.md.tmp.19540.37418ebf2907"
+    "wiki/SofoCard.md.tmp.19540.220c136635e6"
   ]
 }
