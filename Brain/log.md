@@ -129,3 +129,7 @@ Se detectó que `wiki/index.md` y `wiki/log.md` habían quedado movidos a la ra�
 El usuario aclaró que el movimiento de la entrada anterior no fue un accidente: quiere `index.md` y `log.md` en la raíz de `Brain/` (fuera de `wiki/`) a propósito, para tenerlos más a mano. Revertida la restauración — vuelven a `Brain/index.md` y `Brain/log.md`. Actualizado `CLAUDE.md` para reflejar esta estructura como la definitiva.
 
 De paso, el usuario aclaró el propósito del archivo `Sin título.canvas` (vacío, en la raíz de `Brain/`): es para diagramar el Modelo Relacional Normalizado de [[Zitrazo]]. Renombrado a `Modelo Relacional Zitrazo.canvas`.
+
+## [2026-08-10] query | Resumen de la sesión para el profesor
+
+A pedido del usuario, se sintetizó todo lo trabajado en esta sesión en una página nueva, [[Resumen de Sesión — Kickoff de Zitrazo]], pensada para mostrarle al profesor: qué se hizo en la wiki, el arranque del proyecto Zitrazo (Análisis del Caso y Planilla de Requerimientos, real y en la wiki), la pila técnica y la corrección de arquitectura (Pi headless / ESP32 como punto de entrada / JavaFX como app de administración), la reorganización de `Codigo/`, y dos errores concretos de la IA que el equipo corrigió (nombre del proyecto, ubicación de index/log) — como evidencia de revisión activa para el criterio de rúbrica "Uso responsable de IA".

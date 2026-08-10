@@ -39,3 +39,4 @@ Catálogo de todas las páginas de la wiki. Se actualiza en cada ingest.
 - [[ArcaBlend (Proyecto Ejemplo)]] — caso real (2025) de la cadena documental completa: análisis del caso → kick off → acta de constitución → planilla de requerimientos, aplicada a una máquina de arcade educativa.
 - [[Zitrazo]] — proyecto real en desarrollo (2026, Pixelazo Corp): sistema de control de atrasos para el Liceo RBL, con tarjeta de identificación SofoCard. En vivo, se va completando a medida que avanza.
 - [[Desarrollo de Zitrazo]] — carpeta `Codigo/` del proyecto real: estructura, metodología en 3 olas, y backlog de los requerimientos.
+- [[Resumen de Sesión — Kickoff de Zitrazo]] — resumen de la sesión de arranque del proyecto, para mostrarle al profesor.
