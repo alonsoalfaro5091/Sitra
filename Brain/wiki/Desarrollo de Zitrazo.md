@@ -33,10 +33,18 @@ Detalle completo en `Codigo/dev/metodologia.md` y `Codigo/dev/backlog.md` (fuera
 
 Los 10 requerimientos de la [[Planilla de Requerimientos|planilla de requerimientos]] de Zitrazo (R.1-R.10) quedaron convertidos en tareas de desarrollo, agrupados por ola. Todos en estado Pendiente — ninguno implementado todavía.
 
+## Arquitectura
+
+La Raspberry Pi corre Debian Server sin entorno gráfico, así que JavaFX no puede mostrarse en su propia pantalla. La arquitectura queda en 3 partes:
+
+- **Raspberry Pi (backend, sin pantalla):** PostgreSQL + servicio en Java. 4GB RAM, 32GB de almacenamiento.
+- **ESP32 + lector RFID (RC522) + mini pantalla:** el punto de entrada físico donde se pasa la tarjeta SofoCard — le habla al backend por WiFi/HTTP, muestra la confirmación en su propia pantalla. Carcasa impresa en 3D.
+- **JavaFX:** app de administración para los inspectores (historial, listado del día, alta/baja de tarjetas) — corre en su computador, no en la Pi.
+
 ## Tecnologías
 
-Decidido: Java + JavaFX (ver justificación en [[Zitrazo]]), PostgreSQL + PL/pgSQL, Raspberry Pi 4 como servidor de pruebas, tarjeta SofoCard para identificación, git/GitHub para control de versiones.
+Decidido: Java, JavaFX (app de administración), PostgreSQL + PL/pgSQL, Raspberry Pi 4 (Debian Server, 4GB RAM, 32GB), ESP32 + RC522 para el lector, tarjeta SofoCard, git/GitHub.
 
-Pendiente de definir: tipo y modelo del lector de tarjetas, tipo de pantalla de confirmación, sistema operativo de la Raspberry Pi, y su RAM/almacenamiento exactos.
+Pendiente: modelo exacto del lector RFID, tipo de mini pantalla (OLED vs. TFT).
 
 Detalle completo en `Codigo/dev/tecnologias.md` (fuera de la wiki, junto al código) — se va actualizando a medida que se toman las decisiones pendientes.

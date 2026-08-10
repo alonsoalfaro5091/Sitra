@@ -109,3 +109,9 @@ Pendientes ya identificados en ingests anteriores, todavía abiertos (no son bug
 ## [2026-08-10] proyecto | Zitrazo — solo documentar tecnologías, no implementar todavía
 
 El usuario aclaró: por ahora solo quiere dejar documentado qué se va a usar (Raspberry Pi, lenguajes, etc.), no empezar a programar. Creado `Codigo/dev/tecnologias.md` con tabla de software (Java, JavaFX, PostgreSQL/PL-pgSQL, git) y hardware (Raspberry Pi 4, tarjeta SofoCard) ya decididos, y lo que falta definir marcado explícitamente como pendiente: tipo/modelo del lector de tarjetas, tipo de pantalla, sistema operativo de la Pi, y su RAM/almacenamiento — no se inventó ninguno de estos datos. `metodologia.md` ahora enlaza a este archivo en vez de duplicar la lista. Reflejado en [[Desarrollo de Zitrazo]].
+
+## [2026-08-10] proyecto | Zitrazo — hardware del punto de entrada y corrección de arquitectura
+
+El usuario confirmó: Raspberry Pi con Debian Server (terminal pura, sin entorno gráfico), 4GB RAM, 32GB de almacenamiento; para el lector de tarjetas quieren algo barato y accesible, tienen impresora 3D disponible, y preguntaron si un ESP32 con mini pantalla podría servir.
+
+Se recomendó ESP32 + módulo RFID RC522 (barato, muy documentado) + mini pantalla (OLED o TFT). Se detectó y flagueó una inconsistencia con la arquitectura previa: Debian Server sin GUI no puede correr JavaFX en la propia Pi. El usuario confirmó la arquitectura corregida: Pi = backend headless (PostgreSQL + Java), ESP32+RC522+pantalla = punto de entrada físico, JavaFX = app de administración en el PC de un inspector (no en la Pi). Documentado en `Codigo/dev/tecnologias.md` y reflejado en [[Desarrollo de Zitrazo]] (nueva sección "Arquitectura").
