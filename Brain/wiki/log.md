@@ -89,3 +89,7 @@ El usuario corrigió: el proyecto completo se llama **Zitrazo** (nombre que adem
 Renombrada `wiki/SofoCard.md` → `wiki/Zitrazo.md` (mismo contenido, título y menciones ajustadas). Actualizadas las referencias en `index.md` y en `Proyecto Final de Desarrollo de Software.md`. Los enlaces `[[SofoCard]]` de entradas anteriores de este log se dejaron como `[[Zitrazo|SofoCard]]` (mismo texto visible, apuntando a la página correcta) en vez de reescribir el historial.
 
 A pedido del usuario, también se renombraron los 4 documentos reales en `Documentacion/` (que decían "SofoCard" en el nombre de archivo) a "Zitrazo".
+
+## [2026-08-10] ingest | Uso de IA en el Proyecto
+
+Creada [[Uso de IA en el Proyecto]] a pedido del usuario, para dejar registro de cómo el equipo usó IA durante el desarrollo — pensada como respaldo para el criterio de rúbrica "Uso responsable de IA" (Etapa 2 de [[Proyecto Final de Desarrollo de Software]]) y para la defensa individual. Incluye qué tareas hizo la IA (redacción de borradores, llenado de documentos reales, una recomendación técnica puntual), qué decisiones siguieron siendo del equipo, y el error de nombre SofoCard/Zitrazo como ejemplo concreto de por qué hay que revisar lo que la IA entrega.

@@ -22,6 +22,7 @@ Catálogo de todas las páginas de la wiki. Se actualiza en cada ingest.
 
 **Marco del proyecto**
 - [[Proyecto Final de Desarrollo de Software]] — enunciado y rúbrica oficial (4° medio), las 2 etapas y el flujo completo que enlaza cada documento de la wiki.
+- [[Uso de IA en el Proyecto]] — registro de cómo el equipo usó IA en Zitrazo, para el criterio de rúbrica "Uso responsable de IA" y la defensa individual.
 
 ## Plantillas
 
