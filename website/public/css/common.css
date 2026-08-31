@@ -1,0 +1,58 @@
+:root {
+	--blackberry: #0f0420;
+	--peach: #ff9999;
+	--strawberry: #ff5050;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {font-size: 62.5%}
+
+body {
+	background-color: var(--blackberry);
+	color: white;
+}
+
+/* Semantic elements */
+
+header {
+	text-align: center;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* Structure */
+	height: 10rem;
+	/* Visual */
+	background-color: var(--strawberry);
+	font-size: 3rem;
+}
+
+/* Semantic-dependent elements */
+
+nav > button {
+	/* Structure */
+	border: 2px solid var(--blackberry);
+	box-sizing: border-box;
+	min-height: 5rem;
+	min-width: 12rem;
+	padding: 0.5rem 2rem;
+	/* Visual */
+	background-color: var(--peach);
+	border-radius: 0.5rem;
+	cursor: pointer;
+	font-size: 2rem;
+	outline: none;
+	text-align: center;
+}
+
+/* TEXT */
+
+h1 {
+	font-size: 8rem;
+}
