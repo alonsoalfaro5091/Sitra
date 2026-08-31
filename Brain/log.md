@@ -143,3 +143,7 @@ Se confirmó la arquitectura: Raspberry Pi 4 con Debian Server como servidor; ba
 ## [2026-08-31] proyecto | Ubicación de la aplicación web
 
 El equipo decidió que la aplicación web vive en `AppWeb/`, directamente en la raíz del repositorio, y no dentro de `Codigo/`. La rama `AppWeb` fue eliminada; el trabajo continúa en la rama principal.
+
+## [2026-08-31] proyecto | Aplicación web en website/
+
+La ubicación vigente de la aplicación web es `website/`, directamente en la raíz del repositorio. La carpeta `AppWeb/` no se utiliza.

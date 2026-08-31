@@ -11,15 +11,15 @@ Documenta la carpeta `Codigo/` del proyecto real, donde va el desarrollo de [[Si
 ## Estructura
 
 ```
+website/               — aplicación web de administración
 Codigo/
 ├── dev/              — metodología y backlog de desarrollo
-├── AppWeb/           — aplicación web de administración
 ├── java/             — backend Java para la Raspberry Pi
-├── db/                — scripts SQL y procedimientos PL/pgSQL
-└── sistema-fisico/    — terminal ESP32, lector RC522 y tarjetas SofoCard
+├── db/               — scripts SQL y procedimientos PL/pgSQL
+└── sistema-fisico/   — terminal ESP32, lector RC522 y tarjetas SofoCard
 ```
 
-`AppWeb/`, `java/` y `db/` todavía no tienen implementación. `sistema-fisico/` contiene la documentación del hardware confirmado. Antes de fijar la base de datos y los contratos de la API faltan los Casos de Uso, la Especificación de Requerimientos Funcionales y el Modelo Relacional Normalizado (3FN).
+`website/`, `java/` y `db/` todavía no tienen una implementación completa. `sistema-fisico/` contiene la documentación del hardware confirmado. Antes de fijar la base de datos y los contratos de la API faltan los Casos de Uso, la Especificación de Requerimientos Funcionales y el Modelo Relacional Normalizado (3FN).
 
 ## Metodología
 
@@ -41,7 +41,7 @@ La Raspberry Pi corre Debian Server sin entorno gráfico y funciona como servido
 
 - **Raspberry Pi (backend, sin pantalla):** PostgreSQL + servicio en Java. 4GB RAM, 32GB de almacenamiento.
 - **ESP32-2432S028 + RC522:** terminal físico con pantalla táctil TFT integrada de 2,8 pulgadas. Lee la SofoCard, consulta el backend por WiFi/HTTP y muestra el resultado.
-- **Aplicación web:** administración para inspectores (historial, listado del día y alta/baja de tarjetas), desarrollada en `AppWeb/` en la raíz del repositorio.
+- **Aplicación web:** administración para inspectores (historial, listado del día y alta/baja de tarjetas), desarrollada en `website/` en la raíz del repositorio.
 
 ## Tecnologías
 

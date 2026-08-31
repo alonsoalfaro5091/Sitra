@@ -8,7 +8,7 @@ La arquitectura queda dividida en tres partes:
 
 - **Raspberry Pi 4 (servidor, sin pantalla):** corre Debian Server, PostgreSQL, procedimientos PL/pgSQL y el servicio backend en Java. Recibe por WiFi/HTTP los registros enviados desde el punto de entrada.
 - **ESP32-2432S028 + RC522 (punto de entrada físico):** la placa ESP32 es el cerebro del terminal. Lee la tarjeta RFID SofoCard mediante el RC522, muestra la información en su pantalla táctil integrada y se comunica con la Raspberry Pi.
-- **Aplicación web de administración:** se desarrolla en `AppWeb/`, en la raíz del repositorio, y se usa desde el computador del inspector para consultar atrasos y administrar alumnos y tarjetas. La tecnología web exacta todavía debe definirse.
+- **Aplicación web de administración:** se desarrolla en `website/`, en la raíz del repositorio, y se usa desde el computador del inspector para consultar atrasos y administrar alumnos y tarjetas. La tecnología web exacta todavía debe definirse.
 
 ## Software
 
@@ -19,7 +19,7 @@ La arquitectura queda dividida en tres partes:
 | Base de datos | PostgreSQL | Decidido. |
 | Procedimientos | PL/pgSQL | Decidido; requisito de la asignatura. |
 | Firmware del terminal | C/C++ con Arduino framework para ESP32 | Decidido; se comunica con el backend por WiFi/HTTP. |
-| Control de versiones | Git + GitHub | Proyecto Sitra; la aplicación web vive en la carpeta raíz `AppWeb/`. |
+| Control de versiones | Git + GitHub | Proyecto Sitra; la aplicación web vive en la carpeta raíz `website/`. |
 
 ## Hardware
 

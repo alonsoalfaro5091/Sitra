@@ -48,7 +48,7 @@ Por el [[Triángulo de Gestión]], el proyecto se acota a una sola fase por ahor
 - **Raspberry Pi 4:** servidor Debian sin interfaz gráfica, con PostgreSQL, PL/pgSQL y backend Java.
 - **ESP32-2432S028:** cerebro del terminal de entrada, con pantalla táctil TFT integrada de 2,8 pulgadas y comunicación WiFi con la Raspberry Pi.
 - **RC522 + SofoCard:** lector SPI de 13,56 MHz y tarjetas ISO/IEC 14443A.
-- **Aplicación web:** interfaz de administración usada desde el computador del inspector; su código vive en `AppWeb/`, en la raíz del repositorio.
+- **Aplicación web:** interfaz de administración usada desde el computador del inspector; su código vive en `website/`, en la raíz del repositorio.
 
 ## 4. Planilla de Requerimientos
 

@@ -38,9 +38,9 @@ También se documentaron las consideraciones eléctricas de cada componente (ej.
 
 ## 4. Organización del proyecto
 
-- Carpeta `Codigo/` organizada en `dev/`, `java/`, `db/` y `sistema-fisico/`; la aplicación web vive en `AppWeb/`, en la raíz del repositorio.
+- Carpeta `Codigo/` organizada en `dev/`, `java/`, `db/` y `sistema-fisico/`; la aplicación web vive en `website/`, en la raíz del repositorio.
 - Los documentos activos fueron renombrados a Sitra; `Brain/raw/` se mantiene intacto como fuente original.
-- La aplicación web se prepara directamente en la carpeta raíz `AppWeb/`. El repositorio remoto todavía conserva el nombre histórico `Zitrazo` hasta que el equipo decida renombrarlo en GitHub.
+- La aplicación web se prepara directamente en la carpeta raíz `website/`. El repositorio remoto todavía conserva el nombre histórico `Zitrazo` hasta que el equipo decida renombrarlo en GitHub.
 
 ## 5. Errores cometidos y corregidos (uso responsable de IA)
 
