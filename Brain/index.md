@@ -22,7 +22,7 @@ Catálogo de todas las páginas de la wiki. Se actualiza en cada ingest.
 
 **Marco del proyecto**
 - [[Proyecto Final de Desarrollo de Software]] — enunciado y rúbrica oficial (4° medio), las 2 etapas y el flujo completo que enlaza cada documento de la wiki.
-- [[Uso de IA en el Proyecto]] — registro de cómo el equipo usó IA en Zitrazo, para el criterio de rúbrica "Uso responsable de IA" y la defensa individual.
+- [[Uso de IA en el Proyecto]] — registro de cómo el equipo usó IA en Sitra, para el criterio de rúbrica "Uso responsable de IA" y la defensa individual.
 
 ## Plantillas
 
@@ -37,6 +37,6 @@ Catálogo de todas las páginas de la wiki. Se actualiza en cada ingest.
 ## Proyectos
 
 - [[ArcaBlend (Proyecto Ejemplo)]] — caso real (2025) de la cadena documental completa: análisis del caso → kick off → acta de constitución → planilla de requerimientos, aplicada a una máquina de arcade educativa.
-- [[Zitrazo]] — proyecto real en desarrollo (2026, Pixelazo Corp): sistema de control de atrasos para el Liceo RBL, con tarjeta de identificación SofoCard. En vivo, se va completando a medida que avanza.
-- [[Desarrollo de Zitrazo]] — carpeta `Codigo/` del proyecto real: estructura, metodología en 3 olas, y backlog de los requerimientos.
-- [[Resumen de Sesión — Kickoff de Zitrazo]] — resumen de la sesión de arranque del proyecto, para mostrarle al profesor.
+- [[Sitra]] — proyecto real en desarrollo (2026, Pixelazo Corp): sistema de control de atrasos para el Liceo RBL, con tarjeta RFID SofoCard.
+- [[Desarrollo de Sitra]] — carpeta `Codigo/` del proyecto real: arquitectura, metodología, app web y backlog.
+- [[Resumen de Sesión — Kickoff de Sitra]] — resumen de la sesión de arranque y de la actualización de nombre y hardware.

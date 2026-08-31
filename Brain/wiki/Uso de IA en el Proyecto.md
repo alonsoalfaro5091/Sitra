@@ -5,14 +5,14 @@ source: ""
 
 # Uso de IA en el Proyecto
 
-Registro de cómo el equipo de [[Zitrazo]] usó IA (Claude, como asistente de Claude Code) durante el desarrollo del proyecto. Se guarda como respaldo para el criterio de rúbrica "Uso responsable de IA" (Etapa 2) y para la defensa individual, donde cualquier integrante puede tener que explicar una decisión del proyecto.
+Registro de cómo el equipo de [[Sitra]] usó IA durante el desarrollo del proyecto. Se guarda como respaldo para el criterio de rúbrica "Uso responsable de IA" (Etapa 2) y para la defensa individual, donde cualquier integrante puede tener que explicar una decisión del proyecto.
 
 ## Para qué se usó
 
 - **Mantener esta wiki:** organizar el material de la asignatura (plantillas, ejemplos, el enunciado del proyecto) en páginas conectadas entre sí, para no perder el hilo entre documentos.
 - **Redactar un primer borrador** de cada documento (Análisis del Caso, Planilla de Requerimientos) a partir de la información y las decisiones que el equipo entregó en la conversación.
 - **Rellenar los archivos reales** (.docx/.xlsx en `Documentacion/`) con ese contenido, manteniendo el formato de las plantillas oficiales.
-- **Una recomendación técnica puntual:** usar JavaFX en vez de JFrame para la interfaz, justificada por el equipo (sigue siendo Java, moderno, corre bien en la Raspberry Pi 4 que van a usar de servidor).
+- **Recomendaciones técnicas puntuales:** separar la Raspberry Pi como servidor, usar una placa ESP32 con pantalla táctil para el terminal físico y preparar una aplicación web para la administración.
 - **Tareas de orden:** renombrar archivos, organizar el repositorio git, hacer commits y push.
 
 ## Qué NO hizo la IA (sigue siendo del equipo)
@@ -23,4 +23,4 @@ Registro de cómo el equipo de [[Zitrazo]] usó IA (Claude, como asistente de Cl
 
 ## Un error real, como ejemplo
 
-En un momento la IA asumió que el proyecto se llamaba "SofoCard" (confundiéndolo con el nombre de la tarjeta). El equipo lo corrigió: el proyecto es **Zitrazo**, SofoCard es solo un componente. Se corrigió en toda la wiki y en los archivos reales. Queda como ejemplo de por qué el equipo tiene que revisar todo lo que la IA entrega, no darlo por hecho — que es justo lo que pide el criterio de la rúbrica.
+En un momento la IA asumió que el proyecto se llamaba "SofoCard" y el equipo aclaró que ese era solamente el nombre de la tarjeta. El proyecto se llamó después **Zitrazo** y finalmente fue renombrado por el equipo a **Sitra**. Este historial muestra por qué el equipo debe revisar y confirmar lo que produce la IA.

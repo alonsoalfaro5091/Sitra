@@ -3,3 +3,9 @@
 
 # Archivos temporales de Word/Office
 ~$*
+
+# Documentación personal conservada sólo en el equipo local.
+/Documentacion/1 Sitra Análisis del Caso.docx
+/Documentacion/2 Sitra Acta Minuta Kick Off.docx
+/Documentacion/3 Sitra Acta de Constitución.docx
+/Documentacion/4 Sitra Planilla de Requerimientos.xlsx

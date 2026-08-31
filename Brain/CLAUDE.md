@@ -7,7 +7,7 @@ Wiki personal construida y mantenida por Claude a partir de material sobre anál
 - `raw/` — fuentes originales (docx, xlsx, pptx). Nunca se editan, solo se leen.
 - `wiki/` — páginas markdown generadas y mantenidas por Claude. Aquí vive todo el conocimiento sintetizado.
 - `index.md` y `log.md` — viven en la raíz de `Brain/`, fuera de `wiki/`, para tenerlos a mano fácilmente (no hay que entrar a la carpeta de páginas para consultarlos).
-- `*.canvas` — canvases de Obsidian en la raíz de `Brain/`, para diagramas visuales (ej. `Modelo Relacional Zitrazo.canvas` para el modelo de datos del proyecto real).
+- `*.canvas` — canvases de Obsidian en la raíz de `Brain/`, para diagramas visuales (ej. `Modelo Relacional Sitra.canvas` para el modelo de datos del proyecto real).
 - Este archivo — el esquema. Se actualiza junto con el usuario a medida que el flujo de trabajo se afina.
 
 ## `index.md` y `log.md`

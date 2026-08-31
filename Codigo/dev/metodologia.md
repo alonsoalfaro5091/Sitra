@@ -1,4 +1,4 @@
-# Metodología de desarrollo — Zitrazo
+# Metodología de desarrollo — Sitra
 
 ## Equipo
 
@@ -9,14 +9,14 @@ Pixelazo Corp: Alonso y Esteban. Rol de cada uno en el desarrollo del código: *
 Desarrollo en "olas" (iteraciones), cada una entregando algo que se puede probar:
 
 - **Ola 1 — Base de datos:** modelo relacional normalizado, tablas creadas en PostgreSQL, procedimientos almacenados básicos.
-- **Ola 2 — Registro de atrasos:** lectura de la tarjeta SofoCard, registro del atraso, confirmación en pantalla (interfaz JavaFX mínima).
+- **Ola 2 — Registro de atrasos:** lectura de la tarjeta RFID SofoCard, registro del atraso y confirmación en la pantalla táctil del ESP32.
 - **Ola 3 — Consultas y administración:** historial por alumno, listado del día, alta/baja de tarjetas.
 
 El detalle de tareas de cada ola está en [`backlog.md`](backlog.md).
 
 ## Tecnologías
 
-Ver [`tecnologias.md`](tecnologias.md) — lo ya decidido (Java, JavaFX, PostgreSQL/PL-pgSQL, Raspberry Pi 4, tarjeta SofoCard) y lo que todavía falta definir (lector de tarjetas, pantalla, sistema operativo de la Pi).
+Ver [`tecnologias.md`](tecnologias.md) — lo ya decidido (backend Java, aplicación web, PostgreSQL/PL-pgSQL, Raspberry Pi 4, placa ESP32 con pantalla táctil, lector RC522 y tarjetas SofoCard).
 
 ## Antes de escribir código
 

@@ -133,3 +133,13 @@ De paso, el usuario aclaró el propósito del archivo `Sin título.canvas` (vac�
 ## [2026-08-10] query | Resumen de la sesión para el profesor
 
 A pedido del usuario, se sintetizó todo lo trabajado en esta sesión en una página nueva, [[Resumen de Sesión — Kickoff de Zitrazo]], pensada para mostrarle al profesor: qué se hizo en la wiki, el arranque del proyecto Zitrazo (Análisis del Caso y Planilla de Requerimientos, real y en la wiki), la pila técnica y la corrección de arquitectura (Pi headless / ESP32 como punto de entrada / JavaFX como app de administración), la reorganización de `Codigo/`, y dos errores concretos de la IA que el equipo corrigió (nombre del proyecto, ubicación de index/log) — como evidencia de revisión activa para el criterio de rúbrica "Uso responsable de IA".
+
+## [2026-08-31] proyecto | Zitrazo pasa a llamarse Sitra y se confirma el hardware
+
+El equipo cambió el nombre vigente del proyecto de **Zitrazo** a **Sitra**. **SofoCard** se mantiene como nombre de la tarjeta RFID. Los documentos y páginas activas se renombraron, mientras que `Brain/raw/` y las entradas históricas anteriores de este log se conservaron sin reescribir.
+
+Se confirmó la arquitectura: Raspberry Pi 4 con Debian Server como servidor; backend Java con PostgreSQL y PL/pgSQL; aplicación web de administración en `Codigo/AppWeb/`; y una placa ESP32-2432S028 como cerebro del terminal físico. La placa integra una pantalla TFT táctil de 2,8 pulgadas y se conecta a un lector RC522 para leer tarjetas SofoCard de 13,56 MHz, ISO/IEC 14443A. El pinout del lector queda pendiente hasta revisar qué GPIO están libres en la placa física.
+
+## [2026-08-31] proyecto | Ubicación de la aplicación web
+
+El equipo decidió que la aplicación web vive en `AppWeb/`, directamente en la raíz del repositorio, y no dentro de `Codigo/`. La rama `AppWeb` fue eliminada; el trabajo continúa en la rama principal.

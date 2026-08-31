@@ -1,6 +1,6 @@
-# Backlog — Zitrazo
+# Backlog — Sitra
 
-Requerimientos de `Documentacion/4 Zitrazo Planilla de Requerimientos.xlsx` convertidos en tareas de desarrollo, agrupados por ola (ver `metodologia.md`). Estado inicial: todos **Pendiente**.
+Requerimientos de `Documentacion/4 Sitra Planilla de Requerimientos.xlsx` convertidos en tareas de desarrollo, agrupados por ola (ver `metodologia.md`). Estado inicial: todos **Pendiente**.
 
 ## Ola 1 — Base de datos
 
@@ -12,8 +12,8 @@ Requerimientos de `Documentacion/4 Zitrazo Planilla de Requerimientos.xlsx` conv
 
 ## Ola 2 — Registro de atrasos
 
-- [ ] R.1 — Leer tarjeta SofoCard y registrar el atraso (alumno, fecha, hora).
-- [ ] R.2 — Mostrar confirmación en pantalla tras el registro.
+- [ ] R.1 — Leer tarjeta RFID SofoCard de 13,56 MHz y registrar el atraso (alumno, fecha, hora).
+- [ ] R.2 — Mostrar confirmación en la pantalla táctil integrada tras el registro.
 - [ ] R.3 — Manejar tarjeta no reconocida (mensaje de error, no registrar).
 - [ ] R.8 — Verificar que el registro completo tome pocos segundos.
 
@@ -25,4 +25,4 @@ Requerimientos de `Documentacion/4 Zitrazo Planilla de Requerimientos.xlsx` conv
 
 ## Fuera de alcance por ahora
 
-Registro de almuerzo JUNAEB y asistencia por clase (ver [[Zitrazo]], sección "Alcance por fases") — no se agregan tareas para esto hasta que el sistema de atrasos esté terminado.
+Registro de almuerzo JUNAEB y asistencia por clase (ver [[Sitra]], sección "Alcance por fases") — no se agregan tareas para esto hasta que el sistema de atrasos esté terminado.
