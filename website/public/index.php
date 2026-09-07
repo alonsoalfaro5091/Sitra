@@ -11,27 +11,36 @@
 	<nav>
 		<button>Inicio</button>
 		<button>Registros</button>
-		<button>Dashboard</button>
+		<button>Documentación</button>
 	</nav>
+
 	<header>
-		<h1>Sitra</h1>
+		<h1 style="color: var(--peach)">Sitra</h1>
 	</header>
 
 	<main>
 		<form id="anotation-filter" action="/submit-data" method="POST">
 			<h2>Buscar anotaciones</h2>
-			<label for="search-filter">Filtro de búsqueda</label>
-			<select name="search-filter" id="search-filter">
-				<option value="student">Sin filtro</option>
-				<option value="student">Por estudiante</option>
-				<option value="class">Por curso</option>
-				<option value="date">Por fecha</option>
-			</select>
+			<div>
+				<label for="search-filter">Filtro de búsqueda</label>
+				<select name="search-filter" id="search-filter">
+					<option value="student">Sin filtro</option>
+					<option value="student">Por estudiante</option>
+					<option value="class">Por curso</option>
+					<option value="date">Por fecha</option>
+				</select>
+			</div>
 			<button type="submit">Filtrar</button>
 		</form>
 
 		<h2>Resultados de la búsqueda</h2>
-		<section id="anotation-results"></section>
+		<section id="anotation-results">
+			<div id="anotation-id"></div>
+			<div id="anotation-date"></div>
+			<div id="anotation-name"></div>
+			<div id="anotation-class"></div>
+			<div id="anotation-date"></div>
+		</section>
 	</main>
 
 	<footer>
