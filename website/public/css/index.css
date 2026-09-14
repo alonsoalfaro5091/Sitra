@@ -1,7 +1,7 @@
 
-/* FORM */
+/* Searcher */
 
-form {
+#searcher {
 	display: flex;
 	flex-direction: column;
 	/* Structure */
@@ -13,11 +13,13 @@ form {
     background-color: var(--blackberry);
 }
 
-form > div {
-	display: flex;
+#searcher > div {
+	display: grid;
 	align-items: center;
+    grid-template-columns: repeat(2, 1fr);
 	justify-content: space-between;
     /* Structure */
+	gap: 1.5rem;
 	padding: 3rem;
 }
 

@@ -1,7 +1,7 @@
 <?php 
 $rows = [
 	[42, '14-Sep-2026, 23:47', 'Alfonsio Alforo', '1°H'],
-	[43, '14-Sep-2026, 23:48', 'Algen Pizarro', '1°H']
+	[43, '14-Sep-2026, 23:48', 'Alonsel Pizarro', '1°I']
 ];
 ?>
 
@@ -17,7 +17,6 @@ $rows = [
 </head>
 <body>
 	<nav>
-		<a>Inicio</a>
 		<a>Registros</a>
 		<a>Documentación</a>
 	</nav>
@@ -27,19 +26,21 @@ $rows = [
 	</header>
 
 	<main>
-		<form id="anotation-filter" action="/submit-data" method="POST">
+		<section id="searcher">
 			<h2>Buscar atrasos</h2>
 			<div>
 				<label for="search-filter">Filtro de búsqueda</label>
 				<select name="search-filter" id="search-filter">
-					<option value="student">Sin filtro</option>
-					<option value="student">Por estudiante</option>
-					<option value="class">Por curso</option>
-					<option value="date">Por fecha</option>
+					<option value="0">Sin filtro</option>
+					<option value="1">Por estudiante</option>
+					<option value="2">Por curso</option>
+					<option value="3">Por fecha</option>
 				</select>
+				<label for="filter-input" id="filter-label">Null</label>
+				<input type="text" name="filter-input" id="filter-input">
 			</div>
-			<button type="submit">Filtrar</button>
-		</form>
+			<button>Buscar</button>
+		</section>
 
 		<h2>Resultados de la búsqueda</h2>
 		<section id="anotation-results">
@@ -60,5 +61,7 @@ $rows = [
 		<p>Sitra &copy;2026.</p>
 		<p>Ningún derecho reservado.</p>
 	</footer>
+
+	<script src="js/select.js"></script>
 </body>
 </html>

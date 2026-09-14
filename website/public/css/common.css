@@ -81,11 +81,11 @@ h2 {font-size: 3rem}
 
 h3 {font-size: 1.25rem}
 
-label, input {
+label {
     font-size: 1.25rem;
 }
 
-select {
+input, select {
     font-size: 1rem;
 }
 
