@@ -1,3 +1,10 @@
+<?php 
+$rows = [
+	[42, '14-Sep-2026, 23:47', 'Alfonsio Alforo', '1°H'],
+	[43, '14-Sep-2026, 23:48', 'Algen Pizarro', '1°H']
+];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,22 +12,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="css/common.css">
-	<title>Sitra</title>
+	<link rel="stylesheet" href="css/index.css">
+	<title>Sitra - Inicio</title>
 </head>
 <body>
 	<nav>
-		<button>Inicio</button>
-		<button>Registros</button>
-		<button>Documentación</button>
+		<a>Inicio</a>
+		<a>Registros</a>
+		<a>Documentación</a>
 	</nav>
 
 	<header>
-		<h1 style="color: var(--peach)">Sitra</h1>
+		<h1>SITRA</h1>
 	</header>
 
 	<main>
 		<form id="anotation-filter" action="/submit-data" method="POST">
-			<h2>Buscar anotaciones</h2>
+			<h2>Buscar atrasos</h2>
 			<div>
 				<label for="search-filter">Filtro de búsqueda</label>
 				<select name="search-filter" id="search-filter">
@@ -35,11 +43,16 @@
 
 		<h2>Resultados de la búsqueda</h2>
 		<section id="anotation-results">
-			<div id="anotation-id"></div>
-			<div id="anotation-date"></div>
-			<div id="anotation-name"></div>
-			<div id="anotation-class"></div>
-			<div id="anotation-date"></div>
+			<h3>ID</h3>
+			<h3>Fecha y hora</h3>
+			<h3>Nombre del estudiante</h3>
+			<h3>Curso del estudiante</h3>
+			<?php foreach ($rows as $row) { ?>
+			<p> <?= htmlspecialchars($row[0]) ?> </p>
+			<p> <?= htmlspecialchars($row[1]) ?> </p>
+			<p> <?= htmlspecialchars($row[2]) ?> </p>
+			<p> <?= htmlspecialchars($row[3]) ?> </p>
+			<?php } ?>
 		</section>
 	</main>
 

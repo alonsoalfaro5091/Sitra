@@ -1,0 +1,46 @@
+
+/* FORM */
+
+form {
+	display: flex;
+	flex-direction: column;
+	/* Structure */
+	border: 2px solid var(--peach);
+	margin: 3rem auto;
+	padding: 1rem;
+	width: 40%;
+	/* Visual */
+    background-color: var(--blackberry);
+}
+
+form > div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    /* Structure */
+	padding: 3rem;
+}
+
+/* ANOTATION TABLE */
+
+#anotation-results {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(4, max-content);
+    /* Structure */
+    border: 2px solid var(--peach);
+    margin: 1rem auto;
+    padding: 1rem;
+    width: fit-content;
+    /* Visual */
+
+}
+
+#anotation-results > * {
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+    /* Visual */
+    background-color: aliceblue;
+    color: black;
+}
