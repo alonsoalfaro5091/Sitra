@@ -9,6 +9,9 @@ const optionInput = [
 searchFilter.addEventListener('change', function() {
 	console.log("Changed to:", this.value);
 	option = searchFilter.value;
+	filterLabel.style.display = 'block';
+	filterInput.style.display = 'block';
+
 	switch(this.value) {
 		case '0':
 			filterLabel.style.display = 'none';

@@ -43,6 +43,8 @@ main {
 }
 
 footer {
+	padding: 2rem;
+	/* Visual */
 	text-align: center;
 }
 

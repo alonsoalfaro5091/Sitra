@@ -1,12 +1,12 @@
 <?php 
 $rows = [
 	[42, '14-Sep-2026, 23:47', 'Alfonsio Alforo', '1°H'],
-	[43, '14-Sep-2026, 23:48', 'Alonsel Pizarro', '1°I']
+	[43, '14-Sep-2026, 23:48', 'Alongel Pizarro', '1°I']
 ];
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,7 +39,7 @@ $rows = [
 				<label for="filter-input" id="filter-label">Null</label>
 				<input type="text" name="filter-input" id="filter-input">
 			</div>
-			<button>Buscar</button>
+			<button id="search-button">Buscar</button>
 		</section>
 
 		<h2>Resultados de la búsqueda</h2>
@@ -62,6 +62,7 @@ $rows = [
 		<p>Ningún derecho reservado.</p>
 	</footer>
 
+	<script src="js/search.js"></script>
 	<script src="js/select.js"></script>
 </body>
 </html>

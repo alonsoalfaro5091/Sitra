@@ -7,7 +7,7 @@
 	/* Structure */
 	border: 2px solid var(--peach);
 	margin: 3rem auto;
-	padding: 1rem;
+	padding: 1.25rem;
 	width: 40%;
 	/* Visual */
     background-color: var(--blackberry);
@@ -23,6 +23,10 @@
 	padding: 3rem;
 }
 
+#filter-label, #filter-input {
+    display: none;
+}
+
 /* ANOTATION TABLE */
 
 #anotation-results {
@@ -33,16 +37,13 @@
     /* Structure */
     border: 2px solid var(--peach);
     margin: 1rem auto;
-    padding: 1rem;
     width: fit-content;
     /* Visual */
 
 }
 
 #anotation-results > * {
-    border: 1px solid black;
-    padding: 0.5rem 1rem;
-    /* Visual */
-    background-color: aliceblue;
-    color: black;
+    border: 1px solid var(--peach);
+    font-size: 125%;
+    padding: 0.75rem 1.5rem;
 }
