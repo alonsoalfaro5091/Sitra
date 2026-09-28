@@ -6,7 +6,7 @@
 	flex-direction: column;
 	/* Structure */
 	border: 2px solid var(--peach);
-	margin: 3rem auto;
+	margin: 0 auto 3rem;
 	padding: 1.25rem;
 	width: 40%;
 	/* Visual */
@@ -23,7 +23,7 @@
 	padding: 3rem;
 }
 
-#filter-label, #filter-input {
+#search-label, #search-input {
     display: none;
 }
 

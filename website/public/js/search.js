@@ -15,6 +15,7 @@ searchButton.addEventListener('click', function() {
 		.then(response => response.json())
 		.then(data => {
 			console.log(data);
+			console.log('Data:');
 
 			data.forEach(user => {
 				console.log(`User: ${user.name} (${user.email})`);

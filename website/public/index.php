@@ -36,8 +36,8 @@ $rows = [
 					<option value="2">Por curso</option>
 					<option value="3">Por fecha</option>
 				</select>
-				<label for="filter-input" id="filter-label">Null</label>
-				<input type="text" name="filter-input" id="filter-input">
+				<label for="search-input" id="search-label"></label>
+				<input type="text" name="search-input" id="search-input">
 			</div>
 			<button id="search-button">Buscar</button>
 		</section>

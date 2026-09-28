@@ -1,6 +1,6 @@
 const searchFilter = document.getElementById('search-filter');
-const filterLabel = document.getElementById('filter-label');
-const filterInput = document.getElementById('filter-input');
+const filterLabel = document.getElementById('search-label');
+const filterInput = document.getElementById('search-input');
 
 const optionInput = [
 
