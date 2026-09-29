@@ -1,41 +1,57 @@
 const searchFilter = document.getElementById('search-filter');
 const filterLabel = document.getElementById('search-label');
-const filterInput = document.getElementById('search-input');
+const inputContainer = document.getElementById('search-input-container');
 
-const optionInput = [
-
-]
 
 searchFilter.addEventListener('change', function() {
-	console.log("Changed to:", this.value);
-	option = searchFilter.value;
-	filterLabel.style.display = 'block';
-	filterInput.style.display = 'block';
 
-	switch(this.value) {
+	inputContainer.replaceChildren();
+
+	filterLabel.style.display = 'none';
+	inputContainer.style.display = 'none';
+
+
+	switch (this.value) {
+
 		case '0':
-			filterLabel.style.display = 'none';
-			filterInput.style.display = 'none';
 			break;
 		case '1':
 			filterLabel.textContent = 'Estudiante';
-			filterInput.type = 'text';
-			filterInput.value = '';
-			filterInput.disabled = false;
-			filterInput.placeholder = 'Nombre del estudiante';
+
+			const studentSelect = document.createElement('select');
+			studentSelect.id = 'search-input';
+			studentSelect.name = 'search-input';
+			studentSelect.style.width = '100%';
+
+			inputContainer.appendChild(studentSelect);
+
 			break;
 		case '2':
 			filterLabel.textContent = 'Curso';
-			filterInput.type = 'text';
-			filterInput.value = '';
-			filterInput.disabled = false;
-			filterInput.placeholder = 'Nombre del curso';
+
+			const courseSelect = document.createElement('select');
+			courseSelect.id = 'search-input';
+			courseSelect.name = 'search-input';
+			courseSelect.style.width = '100%';
+
+			inputContainer.appendChild(courseSelect);
+
 			break;
 		case '3':
 			filterLabel.textContent = 'Fecha';
-			filterInput.type = 'date';
-			filterInput.value = '';
-			filterInput.disabled = false;
+
+			const dateInput = document.createElement('input');
+			dateInput.type = 'date';
+			dateInput.id = 'search-input';
+			dateInput.name = 'search-input';
+
+			inputContainer.appendChild(dateInput);
+
 			break;
+	}
+
+	if (this.value != 0) {
+		filterLabel.style.display = 'block';
+		inputContainer.style.display = 'block';
 	}
 });

@@ -1,7 +1,7 @@
 <?php 
 $rows = [
-	[42, '14-Sep-2026, 23:47', 'Alfonsio Alforo', '1°H'],
-	[43, '14-Sep-2026, 23:48', 'Alongel Pizarro', '1°I']
+	[42, '14-Sep-2026', '23:47', 'Alfonsio Alforo', '1°H'],
+	[43, '14-Sep-2026', '23:48', 'Alongel Pizarro', '1°I']
 ];
 ?>
 
@@ -36,8 +36,9 @@ $rows = [
 					<option value="2">Por curso</option>
 					<option value="3">Por fecha</option>
 				</select>
-				<label for="search-input" id="search-label"></label>
-				<input type="text" name="search-input" id="search-input">
+				<label id="search-label"></label>
+				<div id="search-input-container">
+				</div>
 			</div>
 			<button id="search-button">Buscar</button>
 		</section>
@@ -45,14 +46,16 @@ $rows = [
 		<h2>Resultados de la búsqueda</h2>
 		<section id="anotation-results">
 			<h3>ID</h3>
-			<h3>Fecha y hora</h3>
+			<h3>Fecha</h3>
+			<h3>Hora</h3>
 			<h3>Nombre del estudiante</h3>
-			<h3>Curso del estudiante</h3>
+			<h3>Curso</h3>
 			<?php foreach ($rows as $row) { ?>
 			<p> <?= htmlspecialchars($row[0]) ?> </p>
 			<p> <?= htmlspecialchars($row[1]) ?> </p>
 			<p> <?= htmlspecialchars($row[2]) ?> </p>
 			<p> <?= htmlspecialchars($row[3]) ?> </p>
+			<p> <?= htmlspecialchars($row[4]) ?> </p>
 			<?php } ?>
 		</section>
 	</main>

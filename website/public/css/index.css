@@ -8,7 +8,7 @@
 	border: 2px solid var(--peach);
 	margin: 0 auto 3rem;
 	padding: 1.25rem;
-	width: 40%;
+	width: 42%;
 	/* Visual */
     background-color: var(--blackberry);
 }
@@ -23,7 +23,7 @@
 	padding: 3rem;
 }
 
-#search-label, #search-input {
+#search-label {
     display: none;
 }
 
@@ -33,7 +33,7 @@
     display: grid;
     align-items: center;
     justify-content: center;
-    grid-template-columns: repeat(4, max-content);
+    grid-template-columns: repeat(5, max-content);
     /* Structure */
     border: 2px solid var(--peach);
     margin: 1rem auto;

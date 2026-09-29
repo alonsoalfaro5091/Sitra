@@ -5,7 +5,7 @@ searchButton.addEventListener('click', function() {
 	const value = document.getElementById('search-input').value;
 	
 	// Fetch the JSON response from your PHP script
-	fetch('query.php', {
+	fetch('queries/query.php', {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/x-www-form-urlencoded"

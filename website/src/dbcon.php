@@ -4,7 +4,7 @@ $host = '127.0.0.1';
 $port = '5432';
 $dbname = 'postgres';
 $user = 'postgres';
-$pass = '022009';
+$pass = '12';
 
 $dsn = "pgsql:host=$host;port=$port;dbname=$dbname;";
 
