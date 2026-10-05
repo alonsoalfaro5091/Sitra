@@ -12,14 +12,10 @@ searchButton.addEventListener('click', function() {
 			},
 			body: `filter=${encodeURIComponent(filter)}&value=${encodeURIComponent(value)}`
 		})
-		.then(response => response.json())
+		.then(response => response.text())
 		.then(data => {
+			console.log("RAW RESPONSE:");
 			console.log(data);
-			console.log('Data:');
-
-			data.forEach(user => {
-				console.log(`User: ${user.name} (${user.email})`);
-			});
 		})
 		.catch(error => console.error('Error fetching data:', error));
 

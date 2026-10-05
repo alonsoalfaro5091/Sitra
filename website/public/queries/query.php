@@ -6,13 +6,24 @@ $filter = $_POST["filter"] ?? "";
 $value = trim($_POST["value"] ?? "");
 
 $sql = match($filter) {
-    '1' =>     "SELECT del_id, del_date, del_time, stu_name || ' ' || stu_surnames, cla_id FROM DELAYS NATURAL JOIN STUDENT WHERE stu_id = :value_",
-    '2' =>     "SELECT del_id, del_date, del_time, stu_name || ' ' || stu_surnames, cla_id FROM DELAYS NATURAL JOIN STUDENT WHERE cla_id = :value_",
-    '3' =>     "SELECT del_id, del_date, del_time, stu_name || ' ' || stu_surnames, cla_id FROM DELAYS NATURAL JOIN STUDENT WHERE del_date = :value_",
-    default => "SELECT del_id, del_date, del_time, stu_name || ' ' || stu_surnames, cla_id FROM DELAYS NATURAL JOIN STUDENT"
+    '1' =>     "SELECT del_id, del_date, del_time, stu_names || ' ' || stu_surnames as stu_fullname, cla_id FROM DELAYS NATURAL JOIN STUDENTS WHERE stu_id = :value_",
+    '2' =>     "SELECT del_id, del_date, del_time, stu_names || ' ' || stu_surnames as stu_fullname, cla_id FROM DELAYS NATURAL JOIN STUDENTS WHERE cla_id = :value_",
+    '3' =>     "SELECT del_id, del_date, del_time, stu_names || ' ' || stu_surnames as stu_fullname, cla_id FROM DELAYS NATURAL JOIN STUDENTS WHERE del_date = :value_",
+    default => "SELECT del_id, del_date, del_time, stu_names || ' ' || stu_surnames as stu_fullname, cla_id FROM DELAYS NATURAL JOIN STUDENTS"
 };
 
 $stmt = $pdo->prepare($sql);
-$stmt->execute([':value_' => $value]);
+
+if ($filter === '0') {
+	$stmt->execute();
+} else {
+	$stmt->execute([':value_' => $value]);
+}
+
+$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+header('Content-Type: application/json');
+
+echo json_encode($results);
 
 ?>
