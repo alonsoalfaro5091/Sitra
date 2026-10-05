@@ -35,6 +35,34 @@ searchFilter.addEventListener('change', function() {
 			courseSelect.style.width = '100%';
 
 			inputContainer.appendChild(courseSelect);
+			fetch('queries/classes.php')
+	.then(response => response.text())
+	.then(data => {
+
+		console.log("RAW RESPONSE:");
+		console.log(JSON.stringify(data));
+
+		try {
+			const classes = JSON.parse(data.replace(/^\uFEFF/, ''));
+
+			console.log("PARSED:");
+			console.log(classes);
+
+			classes.forEach(course => {
+
+				const option = document.createElement("option");
+
+				option.value = course.cla_id;
+				option.textContent = `${course.cla_year}°${course.cla_group}`;
+
+				courseSelect.appendChild(option);
+			});
+
+		} catch (error) {
+			console.error("JSON ERROR:", error);
+		}
+	})
+	.catch(error => console.error('Fetch error:', error));
 
 			break;
 		case '3':
