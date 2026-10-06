@@ -50,13 +50,7 @@ $rows = [
 			<h3>Hora</h3>
 			<h3>Nombre del estudiante</h3>
 			<h3>Curso</h3>
-			<?php foreach ($rows as $row) { ?>
-			<p> <?= htmlspecialchars($row[0]) ?> </p>
-			<p> <?= htmlspecialchars($row[1]) ?> </p>
-			<p> <?= htmlspecialchars($row[2]) ?> </p>
-			<p> <?= htmlspecialchars($row[3]) ?> </p>
-			<p> <?= htmlspecialchars($row[4]) ?> </p>
-			<?php } ?>
+			<div id="results-container"></div>
 		</section>
 	</main>
 

@@ -29,6 +29,12 @@
 
 /* ANOTATION TABLE */
 
+#anotation-results > h3, #anotation-results > p {
+    border: 1px solid var(--peach);
+    font-size: 125%;
+    padding: 0.75rem 1.5rem;
+}
+
 #anotation-results {
     display: grid;
     align-items: center;
@@ -38,12 +44,15 @@
     border: 2px solid var(--peach);
     margin: 1rem auto;
     width: fit-content;
-    /* Visual */
-
 }
 
-#anotation-results > * {
-    border: 1px solid var(--peach);
-    font-size: 125%;
-    padding: 0.75rem 1.5rem;
+#results-container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(5, max-content);
+    /* Structure */
+    width: 100%;
+    grid-column: span 5;
+    /* Visual */
 }

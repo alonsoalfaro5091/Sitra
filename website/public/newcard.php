@@ -17,7 +17,7 @@ $rows = [
 </head>
 <body>
 	<nav>
-		<a href="newcard.php">Nueva Tarjeta</a>
+		<a href="index.php">Menú</a>
 		<a>Documentación</a>
 	</nav>
 
@@ -27,7 +27,7 @@ $rows = [
 
 	<main>
 		<section id="searcher">
-			<h2>Buscar atrasos</h2>
+			<h2>Nueva tarjeta</h2>
 			<div>
 				<label for="search-filter">Filtro de búsqueda</label>
 				<select name="search-filter" id="search-filter">
@@ -50,13 +50,6 @@ $rows = [
 			<h3>Hora</h3>
 			<h3>Nombre del estudiante</h3>
 			<h3>Curso</h3>
-			<?php foreach ($rows as $row) { ?>
-			<p> <?= htmlspecialchars($row[0]) ?> </p>
-			<p> <?= htmlspecialchars($row[1]) ?> </p>
-			<p> <?= htmlspecialchars($row[2]) ?> </p>
-			<p> <?= htmlspecialchars($row[3]) ?> </p>
-			<p> <?= htmlspecialchars($row[4]) ?> </p>
-			<?php } ?>
 		</section>
 	</main>
 
