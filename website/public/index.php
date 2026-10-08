@@ -1,10 +1,3 @@
-<?php 
-$rows = [
-	[42, '14-Sep-2026', '23:47', 'Alfonsio Alforo', '1°H'],
-	[43, '14-Sep-2026', '23:48', 'Alongel Pizarro', '1°I']
-];
-?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -13,11 +6,12 @@ $rows = [
 
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/index.css">
-	<title>Sitra - Inicio</title>
+	<title>Sitra - Buscador</title>
 </head>
 <body>
 	<nav>
 		<a href="newcard.php">Nueva Tarjeta</a>
+		<a href="anotations.php">Registrar anotaciones</a>
 		<a>Documentación</a>
 	</nav>
 

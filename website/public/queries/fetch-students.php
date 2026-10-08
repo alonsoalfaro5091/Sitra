@@ -2,7 +2,7 @@
 
 require_once '../../src/dbcon.php';
 
-$sql = "SELECT cla_id, cla_year, cla_group FROM CLASSES ORDER BY cla_id";
+$sql = "SELECT stu_id, stu_names, stu_surnames FROM STUDENTS ORDER BY stu_id";
 
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
