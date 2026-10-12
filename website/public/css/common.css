@@ -1,5 +1,5 @@
 :root {
-	--blackberry: #0f0420;
+	--blackberry: #120424;
 	--blackerberry: #0b0315;
 	--peach: #ff9090;
 	--strawberry: #ff6060;
@@ -22,7 +22,7 @@ body {
 
 header {
 	text-align: center;
-	padding: 2rem 0;
+	padding: 3rem 0;
 }
 
 nav {
@@ -72,6 +72,28 @@ nav > a {
 	user-select: none;
 }
 
+#main-section {
+	display: flex;
+	flex-direction: column;
+	/* Structure */
+	border: 2px solid var(--peach);
+	margin: 0 auto 3rem;
+	padding: 1.25rem;
+	width: 42%;
+	/* Visual */
+    background-color: var(--blackberry);
+}
+
+#main-section > div {
+	display: grid;
+	align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+	justify-content: space-between;
+    /* Structure */
+	gap: 1.5rem;
+	padding: 3rem;
+}
+
 /* Text elements */
 
 h1, h2 {
@@ -81,7 +103,7 @@ h1, h2 {
 	text-align: center;
 }
 
-h1 {font-size: 10rem}
+h1 {font-size: 9rem}
 
 h2 {font-size: 3rem}
 
@@ -93,6 +115,15 @@ label {
 
 input, select {
     font-size: 1rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	font-size: 1.25rem;
+	text-align: center;
 }
 
 /* Other elements */

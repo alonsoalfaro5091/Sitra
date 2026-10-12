@@ -9,6 +9,23 @@ const classes = [
 	[20, "4°A"], [21, "4°B"], [22, "4°C"], [23, "4°D"], [24, "4°E"], [25, "4°F"], [26, "4°G"]
 ]
 
+/* GET STUDENTS */
+
+var students;
+
+fetch('queries/fetch-students.php')
+.then(response => response.text())
+.then(data => {
+
+	try {
+		students = JSON.parse(data.replace(/^\uFEFF/, ''));
+	
+	} catch (error) {
+		console.error("JSON ERROR:", error);
+	}
+})
+.catch(error => console.error('Fetch error:', error));
+
 
 searchFilter.addEventListener('change', function() {
 
@@ -31,33 +48,17 @@ searchFilter.addEventListener('change', function() {
 			studentSelect.style.width = '100%';
 
 			inputContainer.appendChild(studentSelect);
-			
-			fetch('queries/fetch-students.php')
-			.then(response => response.text())
-			.then(data => {
-			
-				try {
-					const students = JSON.parse(data.replace(/^\uFEFF/, ''));
-				
-					console.log("PARSED STUDENTS:");
-					console.log(students);
-				
-					students.forEach(student => {
-					
-						const option = document.createElement("option");
-					
-						option.value = student.stu_id;
-						option.textContent = `${student.stu_names} ${student.stu_surnames}`;
-					
-						studentSelect.appendChild(option);
-					});
-				
-				} catch (error) {
-					console.error("JSON ERROR:", error);
-				}
-			})
-			.catch(error => console.error('Fetch error:', error));
 
+			students.forEach(student => {
+			
+				const option = document.createElement("option");
+			
+				option.value = student.stu_id;
+				option.textContent = `${student.stu_names} ${student.stu_surnames}`;
+			
+				studentSelect.appendChild(option);
+			});
+			
 			break;
 
 		case '2':

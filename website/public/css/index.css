@@ -1,41 +1,19 @@
 
 /* Searcher */
 
-#searcher {
-	display: flex;
-	flex-direction: column;
-	/* Structure */
-	border: 2px solid var(--peach);
-	margin: 0 auto 3rem;
-	padding: 1.25rem;
-	width: 42%;
-	/* Visual */
-    background-color: var(--blackberry);
-}
-
-#searcher > div {
-	display: grid;
-	align-items: center;
-    grid-template-columns: repeat(2, 1fr);
-	justify-content: space-between;
-    /* Structure */
-	gap: 1.5rem;
-	padding: 3rem;
-}
-
 #search-label {
     display: none;
 }
 
-/* ANOTATION TABLE */
+/* SEARCH TABLE */
 
-#anotation-results > h3, #anotation-results > p {
+#search-results > h3, #search-results > p {
     border: 1px solid var(--peach);
     font-size: 125%;
     padding: 0.75rem 1.5rem;
 }
 
-#anotation-results {
+#search-results {
     display: grid;
     align-items: center;
     justify-content: center;

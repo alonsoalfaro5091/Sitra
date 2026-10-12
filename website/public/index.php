@@ -11,7 +11,7 @@
 <body>
 	<nav>
 		<a href="newcard.php">Nueva Tarjeta</a>
-		<a href="anotations.php">Registrar anotaciones</a>
+		<a href="delays.php">Registrar atrasos</a>
 		<a>Documentación</a>
 	</nav>
 
@@ -20,7 +20,7 @@
 	</header>
 
 	<main>
-		<section id="searcher">
+		<section id="main-section">
 			<h2>Buscar atrasos</h2>
 			<div>
 				<label for="search-filter">Filtro de búsqueda</label>
@@ -38,7 +38,7 @@
 		</section>
 
 		<h2>Resultados de la búsqueda</h2>
-		<section id="anotation-results">
+		<section id="search-results">
 			<h3>ID</h3>
 			<h3>Fecha</h3>
 			<h3>Hora</h3>
@@ -49,8 +49,8 @@
 	</main>
 
 	<footer>
-		<p>Sitra &copy;2026.</p>
-		<p>Ningún derecho reservado.</p>
+		<p>Sitra &copy;2026. Por Esteban Bracamonte y Alonso Alfaro.</p>
+		<p>Algunos derechos reservados.</p>
 	</footer>
 
 	<script src="js/search.js"></script>

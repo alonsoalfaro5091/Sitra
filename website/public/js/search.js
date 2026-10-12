@@ -5,7 +5,7 @@ searchButton.addEventListener('click', function() {
 	const value = document.getElementById('search-input').value;
 	
 	// Fetch the JSON response from your PHP script
-	fetch('queries/query.php', {
+	fetch('queries/select.php', {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/x-www-form-urlencoded"
@@ -16,7 +16,7 @@ searchButton.addEventListener('click', function() {
 		.then(data => {
 			console.log(data);
 			
-			const resultsContainer = document.getElementById('anotation-results');
+			const resultsContainer = document.getElementById('search-results');
 			resultsContainer.replaceChildren(
 				...resultsContainer.querySelectorAll('h3')
 			);

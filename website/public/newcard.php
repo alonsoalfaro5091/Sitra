@@ -12,53 +12,37 @@ $rows = [
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="css/common.css">
-	<link rel="stylesheet" href="css/index.css">
 	<title>Sitra - Inicio</title>
 </head>
 <body>
 	<nav>
 		<a href="index.php">Menú</a>
-		<a>Documentación</a>
+		<a href="delays.php">Registrar atrasos</a>
 	</nav>
 
 	<header>
-		<h1>SITRA</h1>
+		<h2>REGISTRAR SOFOCARD</h2>
 	</header>
 
 	<main>
-		<section id="searcher">
-			<h2>Nueva tarjeta</h2>
+		<section id="main-section">
+			<h2>Nueva SofoCard</h2>
+			<p><br>Coloque la nueva SofoCard en el sensor para vincularla.</p>
 			<div>
-				<label for="search-filter">Filtro de búsqueda</label>
-				<select name="search-filter" id="search-filter">
-					<option value="0">Sin filtro</option>
-					<option value="1">Por estudiante</option>
-					<option value="2">Por curso</option>
-					<option value="3">Por fecha</option>
-				</select>
-				<label id="search-label"></label>
-				<div id="search-input-container">
-				</div>
+				<label for="stu-id">Estudiante</label>
+                <select name="stu-id" id="stu-select">
+                    <!-- SAME AS IN SELECT.JS-->
+                </select>
 			</div>
-			<button id="search-button">Buscar</button>
-		</section>
-
-		<h2>Resultados de la búsqueda</h2>
-		<section id="anotation-results">
-			<h3>ID</h3>
-			<h3>Fecha</h3>
-			<h3>Hora</h3>
-			<h3>Nombre del estudiante</h3>
-			<h3>Curso</h3>
+			<button id="search-button">Registrar</button>
 		</section>
 	</main>
 
 	<footer>
-		<p>Sitra &copy;2026.</p>
-		<p>Ningún derecho reservado.</p>
+		<p>Sitra &copy;2026. Por Esteban Bracamonte y Alonso Alfaro.</p>
+		<p>Algunos derechos reservados.</p>
 	</footer>
 
-	<script src="js/search.js"></script>
-	<script src="js/select.js"></script>
+	<script src="js/getStudents.js"></script>
 </body>
 </html>
