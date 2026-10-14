@@ -12,7 +12,7 @@ $rows = [
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="css/common.css">
-	<title>Sitra - Inicio</title>
+	<title>Sitra - Nueva tarjeta</title>
 </head>
 <body>
 	<nav>
@@ -26,9 +26,11 @@ $rows = [
 
 	<main>
 		<section id="main-section">
-			<h2>Nueva SofoCard</h2>
-			<p><br>Coloque la nueva SofoCard en el sensor para vincularla.</p>
+			<h2>Nueva Tarjeta</h2>
+			<p><br>Coloque la nueva tarjeta en el sensor para vincularla.</p>
 			<div>
+				<label for="rfid">ID Tarjeta</label>
+				<input type="text" id="rfid" readonly placeholder="Coloca la tarjeta en el sensor">
 				<label for="stu-id">Estudiante</label>
                 <select name="stu-id" id="stu-select">
                     <!-- SAME AS IN SELECT.JS-->
@@ -43,6 +45,6 @@ $rows = [
 		<p>Algunos derechos reservados.</p>
 	</footer>
 
-	<script src="js/getStudents.js"></script>
+	<script src="js/newcard.js"></script>
 </body>
 </html>

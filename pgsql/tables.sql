@@ -1,8 +1,9 @@
 /* DROP TABLES */
 
-DROP TABLE DELAYS ON DELETE CASCADE;
-DROP TABLE STUDENTS ON DELETE CASCADE;
-DROP TABLE CLASSES ON DELETE CASCADE;
+DROP TABLE STUDENTS;
+DROP TABLE CLASSES;
+DROP TABLE DELAYS;
+DROP TABLE CARDS;
 
 /* CREATE TABLES */
 
@@ -22,8 +23,13 @@ cla_id int references CLASSES(cla_id)
 CREATE TABLE DELAYS (
 del_id int generated always as identity primary key,
 del_date date default current_date,
-del_time time default current_time,
+del_time time default current_time(0),
 stu_id int references STUDENTS(stu_id)
+)
+
+CREATE TABLE CARDS (
+card_rfid int primary key,
+stu_id int references STUDENTS(stu_id) not null
 )
 
 /* INSERT INTO CLASSES */
@@ -35,7 +41,10 @@ INSERT INTO CLASSES(cla_year, cla_group) VALUES
     (4, 'A'), (4, 'B'), (4, 'C'), (4, 'D'), (4, 'E'), (4, 'F'), (4, 'G')
 
 INSERT INTO STUDENTS(stu_names, stu_surnames, cla_id) VALUES
-	('Juan Paco Pedro', 'De la Mar', 2), ('Esmino', 'Barasi', 2)
+	('Juan Paco Pedro', 'De la Mar', 2), ('Alfonso', 'Alvaro', 2)
+
+INSERT INTO STUDENTS(stu_names, stu_surnames, cla_id) VALUES
+	('Saray Esperanza', 'Peñaylillo Montecinos', 26);
 
 INSERT INTO DELAYS(del_date, del_time, stu_id) VALUES
 	('2026-10-04', '09:30', 1), ('2026-10-04', '08:02', 2),

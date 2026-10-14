@@ -26,8 +26,11 @@ fetch('queries/fetch-students.php')
 })
 .catch(error => console.error('Fetch error:', error));
 
-searchButton = document.getElementById('search-button');
 
-searchButton.addEventListener('click', () => {
+// Post button behavior
+
+postButton = document.getElementById('search-button');
+
+postButton.addEventListener('click', () => {
 	
 });
