@@ -28,9 +28,21 @@ fetch('queries/fetch-students.php')
 
 
 // Post button behavior
+const form = document.getElementById('main-section');
+const popup = document.getElementById('confirmation-popup');
+const confirmButton = document.getElementById('confirm-submit');
+const cancelButton = document.getElementById('cancel-submit');
 
-postButton = document.getElementById('search-button');
+form.addEventListener('submit', function(event) {
+	event.preventDefault();
+	popup.style.display = 'flex';
+});
 
-postButton.addEventListener('click', () => {
-	
+confirmButton.addEventListener("click", function() {
+	popup.style.display = "none";
+	form.submit();
+});
+
+cancelButton.addEventListener("click", function() {
+	popup.style.display = "none";
 });

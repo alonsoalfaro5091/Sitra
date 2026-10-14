@@ -25,12 +25,18 @@
 			<p>Registre al estudiante de forma manual</p>
 			<div>
 				<label for="stu-id">Estudiante</label>
-                <select name="stu-id" id="stu-select">
-                    <!-- SAME AS IN SELECT.JS-->
-                </select>
+                <select name="stu-id" id="stu-select"></select>
 			</div>
 			<button id="search-button" type="submit">Registrar</button>
 		</form>
+
+		<div id="confirmation-popup">
+			<h2>Ventana de Confirmación</h2>
+			<div>
+				<button type="button" id="confirm-submit">Confirmar</button>
+				<button type="button" id="cancel-submit">Cancelar</button>
+			</div>
+		</div>
 	</main>
 
 	<footer>

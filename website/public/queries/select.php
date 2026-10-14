@@ -6,6 +6,7 @@ $filter = $_POST['filter'] ?? '';
 $value = trim($_POST['value'] ?? '');
 
 $sql = match($filter) {
+    '0' =>     "SELECT del_id, del_date, del_time, stu_names || ' ' || stu_surnames as stu_fullname, cla_year || '°' || cla_group as cla_name FROM DELAYS NATURAL JOIN STUDENTS NATURAL JOIN CLASSES",
     '1' =>     "SELECT del_id, del_date, del_time, stu_names || ' ' || stu_surnames as stu_fullname, cla_year || '°' || cla_group as cla_name FROM DELAYS NATURAL JOIN STUDENTS NATURAL JOIN CLASSES WHERE stu_id = :value_",
     '2' =>     "SELECT del_id, del_date, del_time, stu_names || ' ' || stu_surnames as stu_fullname, cla_year || '°' || cla_group as cla_name FROM DELAYS NATURAL JOIN STUDENTS NATURAL JOIN CLASSES WHERE cla_id = :value_",
     '3' =>     "SELECT del_id, del_date, del_time, stu_names || ' ' || stu_surnames as stu_fullname, cla_year || '°' || cla_group as cla_name FROM DELAYS NATURAL JOIN STUDENTS NATURAL JOIN CLASSES WHERE del_date = :value_",
